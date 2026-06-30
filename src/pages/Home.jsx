@@ -3,6 +3,7 @@ import Announcements from "../components/Announcements.jsx";
 import AvailabilityCalendar from "../components/AvailabilityCalendar.jsx";
 import BeforeAfter from "../components/BeforeAfter.jsx";
 import { PRACTICE, TESTIMONIAL } from "../data/siteData.js";
+import { asset } from "../lib/asset.js";
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
             <p className="hero-note">Complimentary consultations for children, teens, and adults.</p>
           </div>
           <div className="hero-art">
-            <img src="/logo-mark.png" alt="Surbeck Orthodontics" />
+            <img src={asset("logo-mark.png")} alt="Surbeck Orthodontics" />
           </div>
         </div>
       </section>

@@ -1,9 +1,11 @@
+import { asset } from "../lib/asset.js";
+
 export default function About() {
   return (
     <section className="section">
       <div className="wrap about">
         <header className="about-head">
-          <img className="headshot" src="/dr-surbeck.png" alt="Dr. Burleigh T. Surbeck" />
+          <img className="headshot" src={asset("dr-surbeck.png")} alt="Dr. Burleigh T. Surbeck" />
           <div>
             <h1>Burleigh T. Surbeck, D.D.S. M.S.D.</h1>
             <p className="about-role">Orthodontist &middot; Bellevue, Washington</p>

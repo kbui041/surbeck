@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 import { PRACTICE } from "../data/siteData.js";
+import { asset } from "../lib/asset.js";
+
+const resolve = (h) => (h.startsWith("http") ? h : asset(h));
 
 /* Downloadable forms. PDFs live in /public/forms; the Privacy Policy is
    hosted on the practice's site. Update hrefs here if files change. */
@@ -42,11 +45,11 @@ export default function NewPatientForms() {
                 <span className="rk">{String(i + 1).padStart(2, "0")}</span>
                 <div>
                   <h4>
-                    <a href={f.href} target="_blank" rel="noopener noreferrer">{f.name}</a>
+                    <a href={resolve(f.href)} target="_blank" rel="noopener noreferrer">{f.name}</a>
                   </h4>
                   <p>
                     {f.note}{" "}
-                    <a href={f.href} target="_blank" rel="noopener noreferrer">Download (PDF) →</a>
+                    <a href={resolve(f.href)} target="_blank" rel="noopener noreferrer">Download (PDF) →</a>
                   </p>
                 </div>
               </li>

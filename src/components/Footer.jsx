@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { PRACTICE, HOURS } from "../data/siteData.js";
+import { asset } from "../lib/asset.js";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -9,7 +10,7 @@ export default function Footer() {
         <div className="footer-top">
           <div className="footer-brand">
             <Link to="/" aria-label="Surbeck Orthodontics">
-              <img className="footer-logo" src="/logo-art.png" alt="Surbeck Orthodontics" />
+              <img className="footer-logo" src={asset("logo-art.png")} alt="Surbeck Orthodontics" />
             </Link>
             <p className="footer-tag">
               Efficient, comprehensive orthodontic care for patients of all ages in

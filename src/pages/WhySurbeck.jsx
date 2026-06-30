@@ -1,5 +1,6 @@
 import BeforeAfter from "../components/BeforeAfter.jsx";
 import CtaBand from "../components/CtaBand.jsx";
+import { asset } from "../lib/asset.js";
 
 export default function WhySurbeck() {
   return (
@@ -14,7 +15,7 @@ export default function WhySurbeck() {
               results, your time, and your experience.
             </p>
           </div>
-          <img className="intro-logo" src="/logo-mark.png" alt="Surbeck Orthodontics" />
+          <img className="intro-logo" src={asset("logo-mark.png")} alt="Surbeck Orthodontics" />
         </div>
       </section>
 
