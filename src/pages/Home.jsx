@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Announcements from "../components/Announcements.jsx";
 import AvailabilityCalendar from "../components/AvailabilityCalendar.jsx";
 import BeforeAfter from "../components/BeforeAfter.jsx";
+import CtaBand from "../components/CtaBand.jsx";
 import { PRACTICE, TESTIMONIAL } from "../data/siteData.js";
 import { asset } from "../lib/asset.js";
 
@@ -12,17 +13,19 @@ export default function Home() {
       <section className="hero">
         <div className="wrap">
           <div className="hero-copy">
-            <h1>Orthodontics for children, teens, and adults in Bellevue.</h1>
+            <p className="kicker">Experts in Efficiency and Excellence</p>
+            <h1>Orthodontics for complex cases of all ages.</h1>
             <p className="lead">
-              Surbeck Orthodontics provides efficient, comprehensive orthodontic care for
-              patients of all ages. Dr. Surbeck and his team work with you to determine the
-              treatment that best fits your needs.
+              Surbeck Orthodontics specializes in the most complex of orthodontic cases,
+              helping to coordinate care among other dental providers and specialists. Leaders
+              in orthodontic efficiency, we consistently provide shorter treatment times
+              without compromising results.
             </p>
             <div className="hero-actions">
               <Link to="/appointment" className="btn">Request an Appointment</Link>
               <a href={PRACTICE.phoneHref} className="btn btn-ghost">{PRACTICE.phone}</a>
             </div>
-            <p className="hero-note">Complimentary consultations for children, teens, and adults.</p>
+            <p className="hero-note">New patient consultations available for children, teens, and adults.</p>
           </div>
           <div className="hero-art">
             <img src={asset("logo-mark.png")} alt="Surbeck Orthodontics" />
@@ -82,7 +85,7 @@ export default function Home() {
       </section>
 
       {/* TESTIMONIAL */}
-      <section className="section">
+      <section className="section paper">
         <div className="wrap">
           <figure className="quote">
             <blockquote>
@@ -94,17 +97,7 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="section cta">
-        <div className="wrap cta-band">
-          <div className="cta-copy">
-            <h2>Schedule a Consultation</h2>
-            <p className="lead">
-              New patient consultations are complimentary, for children, teens, and adults.
-            </p>
-          </div>
-          <Link to="/appointment" className="btn">Request an Appointment</Link>
-        </div>
-      </section>
+      <CtaBand className="white" />
     </>
   );
 }

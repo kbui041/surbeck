@@ -48,7 +48,7 @@ export const ANNOUNCEMENTS = [
   {
     date: "June 20, 2026",
     title: "Now welcoming new patients",
-    body: "Complimentary consultations are available for children, teens, and adults. Call or use the appointment request form to get started.",
+    body: "Consultations are available for children, teens, and adults. Call or use the appointment request form to get started.",
     tag: "",
   },
   {

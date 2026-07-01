@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 
 const links = [
   {
@@ -52,6 +52,7 @@ const links = [
 export default function Header() {
   const [open, setOpen] = useState(false);
   const [openSub, setOpenSub] = useState(null);
+  const location = useLocation();
 
   const closeAll = () => {
     setOpen(false);
@@ -76,15 +77,25 @@ export default function Header() {
         </button>
 
         <nav className={`nav ${open ? "open" : ""}`}>
-          {links.map((l) =>
-            l.children ? (
+          {links.map((l) => {
+            const isGroupActive =
+              l.children &&
+              (location.pathname === l.to ||
+                l.children.some((c) => location.pathname === c.to));
+            return l.children ? (
               <div
                 className="nav-item has-sub"
                 key={l.to}
                 onMouseEnter={() => setOpenSub(l.to)}
                 onMouseLeave={() => setOpenSub(null)}
               >
-                <NavLink to={l.to} onClick={closeAll}>{l.label}</NavLink>
+                <NavLink
+                  to={l.to}
+                  onClick={closeAll}
+                  className={() => (isGroupActive ? "active" : "")}
+                >
+                  {l.label}
+                </NavLink>
                 <div className={`submenu ${openSub === l.to ? "open" : ""}`}>
                   {l.children.map((c) => (
                     <NavLink key={c.to} to={c.to} onClick={closeAll}>
@@ -97,8 +108,8 @@ export default function Header() {
               <NavLink key={l.to} to={l.to} onClick={closeAll}>
                 {l.label}
               </NavLink>
-            )
-          )}
+            );
+          })}
           <Link to="/appointment" className="nav-cta" onClick={closeAll}>Book a Consult</Link>
         </nav>
       </div>

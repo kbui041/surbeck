@@ -172,6 +172,7 @@ img { max-width: 100%; display: block; }
 
 /* closing call-to-action band */
 .section.cta { background: var(--cream); border-top: 1px solid var(--line); padding-top: 48px; padding-bottom: 48px; }
+.section.cta.white { background: #fff; border-top: 1px solid var(--line); padding-top: 48px; padding-bottom: 48px; }
 .cta-band { display: flex; align-items: center; justify-content: space-between; gap: 48px; flex-wrap: wrap; }
 .cta-copy { max-width: 60ch; }
 .cta-copy h2 { margin-bottom: 10px; }

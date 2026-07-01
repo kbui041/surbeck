@@ -18,15 +18,15 @@ export default function ReferringDentists() {
         <div className="wrap">
           <div className="grid cols-3">
             <div className="feature">
-              <h3>Interdisciplinary collaboration</h3>
+              <h3>Interdisciplinary Collaboration</h3>
               <p>We coordinate closely with general dentists and specialists on shared cases.</p>
             </div>
             <div className="feature">
-              <h3>Clear communication</h3>
+              <h3>Clear Communication</h3>
               <p>You receive post-consultation reports and updates so you always know the plan.</p>
             </div>
             <div className="feature">
-              <h3>Complex cases welcomed</h3>
+              <h3>Complex Cases Welcomed</h3>
               <p>Surgical, periodontal, implant, and retreatment cases are part of what we do.</p>
             </div>
           </div>
@@ -34,8 +34,8 @@ export default function ReferringDentists() {
       </section>
 
       <section className="section paper">
-        <div className="wrap" style={{ maxWidth: "72ch" }}>
-          <h2>The referral process</h2>
+        <div className="wrap" style={{ maxWidth: 880 }}>
+          <h2>The Referral Process</h2>
           <p>
             Referring a patient is simple. Use our online doctor referral form, and we will take
             it from there, keeping you informed through consultation, planning, and treatment.

@@ -34,7 +34,7 @@ export default function ComplexCases() {
           <ul className="taglist">
             {CASES.map((c) => <li key={c}>{c}</li>)}
           </ul>
-          <p style={{ marginTop: 28, maxWidth: "72ch" }}>
+          <p style={{ marginTop: 28, maxWidth: 880 }}>
             Many complex cases require collaboration with your dentist, oral surgeon,
             periodontist, or other specialists. Dr. Surbeck plans and coordinates that care so
             every provider is working from the same plan toward the same result.
@@ -53,7 +53,7 @@ export default function ComplexCases() {
         </div>
       </section>
 
-      <CtaBand />
+      <CtaBand className="white"/>
     </>
   );
 }

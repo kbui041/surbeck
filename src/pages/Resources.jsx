@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { PRACTICE } from "../data/siteData.js";
 
 const newPatient = [
-  { k: "01", h: "Your First Visit", p: "What to expect at your complimentary consultation." },
+  { k: "01", h: "Your First Visit", p: "What to expect at your initial consultation." },
   { k: "02", h: "New Patient Forms", p: "Complete your intake paperwork ahead of your appointment.", to: "/resources/new-patient-forms" },
   { k: "03", h: "Insurance & Financing", p: "Flexible payment options and the plans we accept." },
 ];

@@ -2,10 +2,11 @@ import { Link } from "react-router-dom";
 
 export default function CtaBand({
   heading = "Schedule a Consultation",
-  text = "New patient consultations are complimentary, for children, teens, and adults.",
+  text = "New patient consultations are available for children, teens, and adults.",
+  className = "",
 }) {
   return (
-    <section className="section cta">
+    <section className={`section cta${className ? ` ${className}` : ""}`}>
       <div className="wrap cta-band">
         <div className="cta-copy">
           <h2>{heading}</h2>

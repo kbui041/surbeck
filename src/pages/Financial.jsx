@@ -37,7 +37,18 @@ export default function Financial() {
       </section>
 
       <section className="section paper">
-        <div className="wrap" style={{ maxWidth: "72ch" }}>
+        <div className="wrap" style={{ maxWidth: 880 }}>
+          <h2>Consultation Fee</h2>
+          <p>
+            Our initial consultation is $30 for children and $50 for adults. This visit
+            includes your exam with Dr. Surbeck and a clear explanation of whether, and how,
+            treatment can help.
+          </p>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="wrap" style={{ maxWidth: 880 }}>
           <h2>A Note on Records Fees</h2>
           <p>
             Diagnostic records, the photographs, scans, and X-rays used to plan your treatment,

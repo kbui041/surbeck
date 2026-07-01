@@ -45,8 +45,8 @@ export default function BracesVsInvisalign() {
       </section>
 
       <section className="section paper">
-        <div className="wrap" style={{ maxWidth: "72ch" }}>
-          <h2>How Dr. Surbeck determines the best option</h2>
+        <div className="wrap" style={{ maxWidth: 910 }}>
+          <h2>How Dr. Surbeck Determines the Best Option</h2>
           <p>
             The decision is based on the complexity of your case, the movements required,
             your lifestyle, and your commitment to wear. In some cases either option works
@@ -59,7 +59,7 @@ export default function BracesVsInvisalign() {
 
       <section className="section">
         <div className="wrap">
-          <h2 style={{ marginBottom: 36 }}>Real results, both approaches</h2>
+          <h2 style={{ marginBottom: 36 }}>Real Results, Both Approaches</h2>
           <BeforeAfter />
         </div>
       </section>
