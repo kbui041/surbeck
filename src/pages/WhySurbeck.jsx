@@ -8,12 +8,7 @@ export default function WhySurbeck() {
       <section className="page-intro">
         <div className="wrap intro-split">
           <div>
-            <h1>Why Surbeck Orthodontics</h1>
-            <p className="lead">
-              Orthodontics is a recognized dental specialty. Choosing a specialist, and a
-              practice built around precision and attention, has a direct effect on your
-              results, your time, and your experience.
-            </p>
+            <h1>Why Surbeck</h1>
           </div>
           <img className="intro-logo" src={asset("logo-mark.png")} alt="Surbeck Orthodontics" />
         </div>
@@ -21,56 +16,13 @@ export default function WhySurbeck() {
 
       <section className="section">
         <div className="wrap" style={{ maxWidth: 880 }}>
-          <h2>Orthodontics is a Specialty</h2>
-          <p>
-            After dental school, an orthodontist completes two to three additional years of
-            full-time, accredited residency dedicated solely to the diagnosis and treatment of
-            misaligned teeth and jaws. That training is the foundation for the precision and
-            predictability you should expect from specialist care.
-          </p>
-        </div>
-      </section>
-
-      <section className="section paper">
-        <div className="wrap">
-          <h2 style={{ marginBottom: 36 }}>What Sets Specialist Care Apart</h2>
-          <div className="grid cols-3">
-            <div className="feature">
-              <h3>One Doctor, Start to Finish</h3>
-              <p>Dr. Surbeck personally plans and oversees your treatment from consultation to retention.</p>
-            </div>
-            <div className="feature">
-              <h3>Lower Volume, Higher Attention</h3>
-              <p>A deliberately measured schedule means more focused time at every appointment.</p>
-            </div>
-            <div className="feature">
-              <h3>Precision Treatment Planning</h3>
-              <p>Detailed diagnostics and planning before the first bracket is ever placed.</p>
-            </div>
-            <div className="feature">
-              <h3>Shorter Appointment Intervals</h3>
-              <p>Efficient scheduling that keeps treatment moving and minimizes total time in braces.</p>
-            </div>
-            <div className="feature">
-              <h3>Interdisciplinary Planning</h3>
-              <p>Coordinated care with your dentist and other specialists when your case calls for it.</p>
-            </div>
-            <div className="feature">
-              <h3>Long-Term Stability</h3>
-              <p>Treatment planned for results that hold, not just teeth that look straight on day one.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="wrap" style={{ maxWidth: 880 }}>
           <h2>One Doctor, Start to Finish</h2>
-          <p>
+          <p><strong>
             At Surbeck Orthodontics, your treatment is guided by one orthodontist from your
             initial consultation through your final retainer check. Every treatment plan,
             adjustment, and clinical decision is made by Dr. Surbeck, who has firsthand
             knowledge of your smile, your treatment goals, and your progress.
+            </strong>
           </p>
           <p>
             When care is shared among multiple doctors or providers, treatment can become less
@@ -97,10 +49,11 @@ export default function WhySurbeck() {
       <section className="section paper">
         <div className="wrap" style={{ maxWidth: 880 }}>
           <h2>Lower Volume, High Attention</h2>
-          <p>
+          <p><strong>
             At Surbeck Orthodontics, we intentionally maintain a thoughtfully paced schedule so
             that every patient receives the time, focus, and attention their treatment
             deserves. We believe exceptional orthodontic care cannot be rushed.
+            </strong>
           </p>
           <p>
             Rather than scheduling as many patients as possible each day, we deliberately limit
@@ -127,11 +80,12 @@ export default function WhySurbeck() {
       <section className="section">
         <div className="wrap" style={{ maxWidth: 880 }}>
           <h2>Precision Treatment Planning</h2>
-          <p>
+          <p><strong>
             Exceptional orthodontic treatment begins long before the first bracket is placed or
             the first aligner is worn. At Surbeck Orthodontics, we believe that careful
             planning is one of the most important predictors of an efficient, successful
             outcome.
+            </strong>
           </p>
           <p>
             Every patient undergoes a comprehensive diagnostic evaluation that allows Dr.
@@ -159,10 +113,11 @@ export default function WhySurbeck() {
       <section className="section paper">
         <div className="wrap" style={{ maxWidth: 880}}>
           <h2>Shorter Appointment Intervals</h2>
-          <p>
+          <p><strong>
             The timing between orthodontic appointments matters. At Surbeck Orthodontics, we
             typically schedule patients every three to four weeks because we believe consistent
             monitoring and timely adjustments help treatment progress more efficiently.
+            </strong>
           </p>
           <p>
             Tooth movement is a dynamic biological process. By seeing patients at shorter,
@@ -196,10 +151,11 @@ export default function WhySurbeck() {
       <section className="section">
         <div className="wrap" style={{ maxWidth: 880 }}>
           <h2>Interdisciplinary Planning</h2>
-          <p>
+          <p><strong>
             Some orthodontic cases require more than straight teeth. They require careful
             coordination between multiple dental professionals, each contributing their
             expertise to achieve the healthiest and most predictable long-term outcome.
+            </strong>
           </p>
           <p>
             At Surbeck Orthodontics, we work closely with your general dentist and, when
@@ -229,11 +185,12 @@ export default function WhySurbeck() {
       <section className="section paper">
         <div className="wrap" style={{ maxWidth: 880 }}>
           <h2>Long-Term Stability</h2>
-          <p>
+          <p><strong>
             A beautiful smile is only successful if it remains healthy, functional, and stable
             long after treatment is complete. At Surbeck Orthodontics, we believe the true
             measure of orthodontic success is not how your teeth look on the day your braces
             come off, but how well your results stand the test of time.
+            </strong>
           </p>
           <p>
             Every treatment plan is developed with the long-term position of your teeth, bite,
