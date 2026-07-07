@@ -25,8 +25,11 @@ export default function BracesVsInvisalign() {
               </p>
               <ul className="res">
                 <li><span className="rk">+</span><div><p>Excellent for complex movements and bite correction.</p></div></li>
-                <li><span className="rk">+</span><div><p>No compliance required, they are always working.</p></div></li>
-                <li><span className="rk">–</span><div><p>More visible and require careful cleaning around brackets.</p></div></li>
+                <li><span className="rk">+</span><div><p>Excellent option for surgical cases.</p></div></li>
+                <li><span className="rk">+</span><div><p>Excellent option for younger children unable to adhere to clear aligner compliance requirements.</p></div></li>
+                <li><span className="rk">+</span><div><p>Total control by Dr. Surbeck. Requested changes from either patient or dental team can be implemented as soon as the next appointment. This improves treatment length and any interdisciplinary dental work needed.</p></div></li>
+                <li><span className="rk">+</span><div><p>Less compliance required, they are always working.</p></div></li>
+                <li><span className="rk">-</span><div><p>More visible and require careful cleaning around brackets.</p></div></li>
               </ul>
             </div>
             <div className="panel">
@@ -36,8 +39,10 @@ export default function BracesVsInvisalign() {
               </p>
               <ul className="res">
                 <li><span className="rk">+</span><div><p>Nearly invisible and removable for eating and cleaning.</p></div></li>
-                <li><span className="rk">+</span><div><p>Comfortable for many mild to moderate cases.</p></div></li>
-                <li><span className="rk">–</span><div><p>Results depend entirely on consistent, full-time wear.</p></div></li>
+                <li><span className="rk">+</span><div><p>Comfortable for many mild cases.</p></div></li>
+                <li><span className="rk">–</span><div><p>Results depend entirely on consistent, full-time wear. Full time (22+ hours/day) compliance can present a challenge to some patients.</p></div></li>
+                <li><span className="rk">–</span><div><p>Less control by Dr. Surbeck, requested changes cannot be implemented right away. Changes need to be done through invisalign and may even require additional appointments and fees.</p></div></li>
+
               </ul>
             </div>
           </div>
