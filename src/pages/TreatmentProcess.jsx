@@ -1,38 +1,74 @@
+import { Link } from "react-router-dom";
 import CtaBand from "../components/CtaBand.jsx";
 
 const BEFORE_TREATMENT = [
   {
-    n: "01",
     h: "Consultation",
-    p: "A 45-minute appointment where we take your initial photos (facial and intraoral) and begin to understand more about you, your smile goals, and your orthodontic case. Following your consultation, Dr. Surbeck writes a detailed, comprehensive letter reviewing every point discussed, so there's no need to bring a notepad, we'll take the notes for you. We send a similar letter to your dentist, so they can begin to learn about your proposed treatment as well.",
+    p: (
+      <>
+        A 45-minute appointment where we take your initial photos (facial and intraoral) and
+        begin to understand more about you, your smile goals, and your orthodontic case.
+        Following your consultation, Dr. Surbeck writes a detailed, comprehensive letter
+        reviewing every point discussed, so there's no need to bring a notepad, we'll take the
+        notes for you. We send a similar letter to your dentist, so they can begin to learn
+        about your proposed treatment as well.
+        <br />
+        <br />
+        <Link to="/financial#consultation-fee" className="textlink">
+          Is there a consultation fee?
+        </Link>
+      </>
+    ),
   },
   {
-    n: "02",
     h: "Observation Appointments",
-    p: "There may be a recommended period of observation before beginning treatment. These appointments allow us to take new photos to better track orthodontic patterns, progress, and any other elements of your case. They're usually no more than 30 minutes.",
+    p: "There may be a recommended period of observation before beginning treatment. These appointments allow us to take new photos to better track orthodontic patterns, progress, and any other elements of your case. They're usually no more than 30 minutes and completely complimentary! We love the additional data that these appointments provide. Routine “OBS” appointments are typically scheduled every 6-12 months, depending on your case. If you have a more urgent concern, we can schedule an appointment sooner.",
   },
   {
-    n: "03",
     h: "Diagnostic Records",
-    p: "Photographs, a set of orthodontic X-rays, intraoral scans, and impressions for plaster casts. Taking records does not commit you to beginning treatment; it helps Dr. Surbeck understand your individual case in greater detail and treatment plan accordingly. This appointment is about 30 minutes. Your Treatment Plan Review is scheduled following this visit.",
+    p: (
+      <>
+        Photographs, a set of orthodontic X-rays, intraoral scans, and/or impressions for
+        plaster casts compose our diagnostic records. Taking records does not commit you to
+        beginning treatment; it helps Dr. Surbeck understand your individual case in greater
+        detail and treatment plan accordingly. This appointment is about 30 minutes. Your
+        Treatment Plan Review is scheduled following this visit.
+        <br />
+        <br />
+        <Link to="/financial#diagnostic-records-fee" className="textlink">
+          Is there a fee for the diagnostic records?
+        </Link>
+      </>
+    ),
   },
   {
-    n: "04",
     h: "Treatment Plan Review",
-    p: "A 45-minute, one-on-one appointment with Dr. Surbeck to review the results of his treatment planning, using the diagnostic records taken. This visit is held during the lunch hour or at the end of the day, so Dr. Surbeck can give it his undivided attention. We want patients to feel free to ask any and all questions about their proposed treatment. At the end of this visit, you'll meet with our Treatment Coordinator to review treatment fees and payment plan options.",
+    p: (
+      <>
+        A 45-minute, one-on-one appointment with Dr. Surbeck to review the results of his
+        treatment planning, using the diagnostic records taken. This visit is held during the
+        lunch hour or at the end of the day, so Dr. Surbeck can give it his undivided attention.
+        We want patients to feel free to ask any and all questions about their proposed
+        treatment. At the end of this visit, you'll meet with our Treatment Coordinator to
+        review treatment fees and payment plan options.
+        <br />
+        <br />
+        <Link to="/financial" className="textlink">
+          Learn more about fees and payment plans
+        </Link>
+      </>
+    ),
   },
 ];
 
 const GETTING_BRACES_PLACED = [
   {
-    n: "01",
     h: "Separators",
     p: <>The “<strong>sep</strong>” (“seperators”) appointment where we add small rubber bands
     which will be placed to open small spaces of either side of the lower 1st molars for band
     placement. This appointment is approximately 15 minutes.</>,
   },
   {
-    n: "02",
     h: "Band Appointment",
     p: <>4-7 days after the “sep” appointment, will be the banding
     appointment. Metal “<strong>bands</strong>” will be affixed to the lower 1st molars and impressions will
@@ -40,7 +76,6 @@ const GETTING_BRACES_PLACED = [
     schedule these appointments in the morning.</>
   },
   {
-    n: "03",
     h: "Bond Appointment",
     p: <>2-14 days after the “band” appointment, we will “<strong>bond</strong>”. We will
     bond the braces to the upper and lower teeth. Oral Hygiene instructions and care of
@@ -56,7 +91,10 @@ export default function TreatmentProcess() {
         <div className="wrap">
           <h1>Our Treatment Process</h1>
           <p className="lead">
-            From your first visit to long-term retention follow-up, here is what to expect.
+            Every appointment should create value.
+          </p>
+          <p className="">
+            From your first consultation through your final retainer check, our goal is that every visit provides meaningful progress, thoughtful communication, and expert guidance. We believe orthodontic care should never feel rushed or transactional.
           </p>
         </div>
       </section>
@@ -66,8 +104,7 @@ export default function TreatmentProcess() {
           <h2 style={{ marginBottom: 28 }}>Before Treatment</h2>
           <ol className="steps">
             {BEFORE_TREATMENT.map((s) => (
-              <li className="step" key={s.n}>
-                <span className="step-n">{s.n}</span>
+              <li className="step" key={s.h}>
                 <div>
                   <h3>{s.h}</h3>
                   <p>{s.p}</p>
@@ -89,8 +126,7 @@ export default function TreatmentProcess() {
           </p>
           <ol className="steps">
             {GETTING_BRACES_PLACED.map((s) => (
-              <li className="step" key={s.n}>
-                <span className="step-n">{s.n}</span>
+              <li className="step" key={s.h}>
                 <div>
                   <h3>{s.h}</h3>
                   <p>{s.p}</p>

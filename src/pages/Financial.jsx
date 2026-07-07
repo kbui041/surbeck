@@ -36,7 +36,7 @@ export default function Financial() {
         </div>
       </section>
 
-      <section className="section paper">
+      <section className="section paper" id="consultation-fee">
         <div className="wrap" style={{ maxWidth: 880 }}>
           <h2>Consultation Fee</h2>
           <p>
@@ -47,13 +47,13 @@ export default function Financial() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section" id="diagnostic-records-fee">
         <div className="wrap" style={{ maxWidth: 880 }}>
-          <h2>A Note on Records Fees</h2>
+          <h2>Diagnostic Records Fee</h2>
           <p>
-            Diagnostic records, the photographs, scans, and X-rays used to plan your treatment,
-            are part of delivering accurate, specialist care. We will explain any associated fee
-            clearly and up front.
+            Diagnostic records, the photographs, scans, X-rays, and/or impressions used to plan
+            your treatment, are part of delivering accurate, specialist care. We will explain
+            any associated fee clearly and up front.
           </p>
           <p className="muted"><em>Placeholder copy, ready for the office's final figures and policy.</em></p>
         </div>
