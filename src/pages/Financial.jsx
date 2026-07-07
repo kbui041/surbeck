@@ -27,7 +27,7 @@ export default function Financial() {
               </div>
               <div className="feature">
                 <h3>Insurance</h3>
-                <p>We work with most plans, file your claims, and help you make the most of your benefits. Often times, the benefits for in-network orthodontic providers and out-of-network orthodontic providers and out-of-network orthodontic providers is the same. This is great news for you: it means you can find the orthodontist that best aligns with your treatment desires and what kind of orthodontic experience you'd like.</p>
+                <p>We work with most plans, file your claims, and help you make the most of your benefits. Often times, the benefits for in-network orthodontic providers and out-of-network orthodontic providers is the same. This is great news for you: it means you can find the orthodontist that best aligns with your treatment desires and what kind of orthodontic experience you'd like.</p>
               </div>
             </div>
             <div style={{ flex: 1, minWidth: 0 }}>
@@ -55,7 +55,7 @@ export default function Financial() {
         <div className="wrap" style={{ maxWidth: 880 }}>
           <h2>Consultation Fee</h2>
           <p>
-            Our initial consultation is $30 for children and $50 for adults. This visit includes your exam with Dr. Surbeck and a clear explanation of whether, and how, treatment can help. We believe your orthodontic consultation shoud be more than a brief conversation: it's the foundation for every decision that follows.
+            Our initial consultation is $30 for children and $50 for adults. This visit includes your exam with Dr. Surbeck and a clear explanation of whether, and how, treatment can help. We believe your orthodontic consultation should be more than a brief conversation: it's the foundation for every decision that follows.
           </p>
 
           <p>
