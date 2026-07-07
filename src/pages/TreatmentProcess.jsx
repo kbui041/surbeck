@@ -64,22 +64,22 @@ const BEFORE_TREATMENT = [
 const GETTING_BRACES_PLACED = [
   {
     h: "Separators",
-    p: <>The “<strong>sep</strong>” (“seperators”) appointment where we add small rubber bands
-    which will be placed to open small spaces of either side of the lower 1st molars for band
+    p: <>The “<strong>sep</strong>” (“separators”) appointment where we add small rubber bands
+    which will be placed to open small spaces on either side of the lower 1st molars for band
     placement. This appointment is approximately 15 minutes.</>,
   },
   {
     h: "Band Appointment",
     p: <>4-7 days after the “sep” appointment, will be the banding
     appointment. Metal “<strong>bands</strong>” will be affixed to the lower 1st molars and impressions will
-    be taken for indirect bonding. This appointment is approximately 45 minutes; We
+    be taken for indirect bonding. This appointment is approximately 45 minutes; we
     schedule these appointments in the morning.</>
   },
   {
     h: "Bond Appointment",
     p: <>2-14 days after the “band” appointment, we will “<strong>bond</strong>”. We will
     bond the braces to the upper and lower teeth. Oral Hygiene instructions and care of
-    braces will be reviewed. This appointment is approximately 1 hour 45 minutes; We
+    braces will be reviewed. This appointment is approximately 1 hour 45 minutes; we
     schedule these appointments in the morning.</>,
   },
 ];
@@ -170,7 +170,7 @@ export default function TreatmentProcess() {
           <p>
             Before removing the remaining braces, Dr. Surbeck invites patients to share
             feedback, input, and general commentary. While we treat to clinical norms, there is
-            always a degree of subjectivity patients may want to share, not everyone's "ideal
+            always a degree of subjectivity that patients may want to share input on, not everyone's "ideal
             smile" looks the same, and we want every patient to have the chance to give direct,
             meaningful feedback on their results.
           </p>
