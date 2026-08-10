@@ -14,12 +14,12 @@ export default function Home() {
         <div className="wrap">
           <div className="hero-copy">
             <p className="kicker">Experts in Efficiency and Excellence</p>
-            <h1>Orthodontics for complex cases of all ages.</h1>
+            <h1>Specialized Orthodontics for complex cases of all ages.</h1>
             <p className="lead">
               Surbeck Orthodontics specializes in the most complex of orthodontic cases,
               helping to coordinate care among other dental providers and specialists. Leaders
               in orthodontic efficiency, we consistently provide shorter treatment times
-              without compromising results.
+              without compromising <em style={{ textDecoration: "underline" }}>impressive</em> results.
             </p>
             <div className="hero-actions">
               <Link to="/appointment" className="btn">Request an Appointment</Link>

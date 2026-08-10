@@ -14,7 +14,9 @@ import About from "./pages/About.jsx";
 import Team from "./pages/Team.jsx";
 import Gallery from "./pages/Gallery.jsx";
 import Resources from "./pages/Resources.jsx";
+import Videos from "./pages/Videos.jsx";
 import Education from "./pages/Education.jsx";
+import EducationArticle from "./pages/EducationArticle.jsx";
 import NewPatientForms from "./pages/NewPatientForms.jsx";
 import FAQ from "./pages/FAQ.jsx";
 import Financial from "./pages/Financial.jsx";
@@ -46,6 +48,8 @@ export default function App() {
 
           <Route path="/resources" element={<Resources />} />
           <Route path="/patient-education" element={<Education />} />
+          <Route path="/patient-education/:slug" element={<EducationArticle />} />
+          <Route path="/resources/videos" element={<Videos />} />
           <Route path="/resources/new-patient-forms" element={<NewPatientForms />} />
           <Route path="/resources/faq" element={<FAQ />} />
           <Route path="/financial" element={<Financial />} />

@@ -34,6 +34,7 @@ const links = [
     label: "Resources",
     children: [
       { to: "/patient-education", label: "Patient Education Library" },
+      { to: "/resources/videos", label: "Treatment Videos" },
       { to: "/resources/new-patient-forms", label: "New Patient Forms" },
       { to: "/resources/faq", label: "Frequently Asked Questions" },
       { to: "/financial", label: "Financial Information" },

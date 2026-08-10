@@ -7,10 +7,11 @@ const newPatient = [
   { k: "03", h: "Insurance & Financing", p: "Flexible payment options and the plans we accept." },
 ];
 const duringTreatment = [
-  { k: "01", h: "Braces Care", p: "Keeping your braces and teeth clean and healthy." },
-  { k: "02", h: "Aligner Care", p: "Wear schedule and cleaning tips for clear aligners." },
-  { k: "03", h: "Orthodontic Emergencies", p: "What to do for a loose bracket or wire." },
-  { k: "04", h: "Foods to Enjoy & Avoid", p: "Protecting your appliance during treatment." },
+  { k: "01", h: "Treatment Videos", p: "Short animations showing how appliances work.", to: "/resources/videos" },
+  { k: "02", h: "Braces Care", p: "Keeping your braces and teeth clean and healthy." },
+  { k: "03", h: "Aligner Care", p: "Wear schedule and cleaning tips for clear aligners." },
+  { k: "04", h: "Orthodontic Emergencies", p: "What to do for a loose bracket or wire." },
+  { k: "05", h: "Foods to Enjoy & Avoid", p: "Protecting your appliance during treatment." },
 ];
 
 function ResList({ items }) {
@@ -41,6 +42,7 @@ export default function Resources() {
           </p>
           <div className="hero-actions" style={{ marginTop: 22 }}>
             <Link to="/resources/new-patient-forms" className="btn">New Patient Forms</Link>
+            <Link to="/resources/videos" className="btn btn-ghost">Treatment Videos</Link>
             <Link to="/resources/faq" className="btn btn-ghost">FAQ</Link>
           </div>
         </div>

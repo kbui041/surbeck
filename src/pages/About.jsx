@@ -3,16 +3,27 @@ import { asset } from "../lib/asset.js";
 export default function About() {
   return (
     <section className="section">
-      <div className="wrap about">
-        <header className="about-head">
-          <img className="headshot" src={asset("dr-surbeck.png")} alt="Dr. Burleigh T. Surbeck" />
-          <div>
-            <h1>Burleigh T. Surbeck, D.D.S. M.S.D.</h1>
-            <p className="about-role">Orthodontist &middot; Bellevue, Washington</p>
-          </div>
-        </header>
+      <div className="wrap about about-split">
+        <aside className="about-figure">
+          <img
+            className="portrait"
+            src={asset("dr-surbeck-portrait.jpg")}
+            alt="Dr. Burleigh T. Surbeck at the door of his Bellevue practice"
+            width="1600"
+            height="2000"
+          />
+          <figure className="testimonial">
+            <blockquote>
+              &ldquo;The most awesome orthodontist with a personal approach.&rdquo;
+            </blockquote>
+            <figcaption>Lisa H., patient</figcaption>
+          </figure>
+        </aside>
 
         <div className="about-body">
+          <h1>Burleigh T. Surbeck, D.D.S. M.S.D.</h1>
+          <p className="about-role">Orthodontist &middot; Bellevue, Washington</p>
+
           <p className="lead">
             Dr. Surbeck, a Tacoma native, grew up in a dental environment; his father
             practiced general dentistry in Federal Way for over 35 years. This experience
@@ -50,11 +61,6 @@ export default function About() {
             and halibut, a good weekend DIY project, vegetable gardening, and cheering on the
             Huskies.
           </p>
-
-          <blockquote className="pullquote">
-            &ldquo;The most awesome orthodontist with a personal approach.&rdquo;
-            <span className="byline">Lisa H., Client</span>
-          </blockquote>
         </div>
       </div>
     </section>

@@ -80,3 +80,33 @@ export const RESULTS = [
   { category: "Deep Overbite", patient: "Adult patient", length: "18 months", tone: "duo-sea" },
   { category: "Spacing & Alignment", patient: "Adult patient", length: "9 months", tone: "duo-sage" },
 ];
+
+/* ----------------------------- VIDEO LIBRARY ------------------------------
+   Dolphin Aquarium animations, hosted on our UNLISTED YouTube channel.
+
+   To add a video:
+   1. In Aquarium, export the animation and upload it to YouTube.
+   2. Set the visibility to "Unlisted" (NOT Private - private videos cannot
+      be embedded, and NOT Public - our Aquarium license requires unlisted).
+   3. Copy the share link, e.g. https://youtu.be/vgofWMXfdXQ
+      The id is the part after the last slash:  vgofWMXfdXQ
+   4. Add a line below. Keep the quotes, brackets, and commas as shown.
+
+   category must be one of the VIDEO_CATEGORIES listed underneath. */
+export const VIDEO_CATEGORIES = [
+  "Appliances",
+  "Braces & Aligners",
+  "Daily Care",
+  "Emergencies",
+  "Retention",
+];
+
+export const VIDEOS = [
+  {
+    id: "vgofWMXfdXQ",
+    title: "Rapid Palatal Expander (Mixed Dentition)",
+    category: "Appliances",
+    blurb:
+      "How an expander is placed and how it gradually widens the upper jaw to create room for permanent teeth.",
+  },
+];
