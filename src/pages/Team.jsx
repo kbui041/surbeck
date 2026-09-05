@@ -19,6 +19,7 @@ const TEAM = [
   {
     name: "Vanessa",
     role: "Orthodontic Assistant",
+    photo: "team-vanessa.jpg",
     tone: "duo-pine",
     paras: [
       "Hi! I’m Vanessa. I enjoy orthodontics because every day feels like I’m doing arts and crafts while helping create confident smiles. Outside of the office, you can usually find me hunting down a new coffee shop with my sister, hiking with my four-legged bestie, Aiko, road-tripping, reading, or drawing.",

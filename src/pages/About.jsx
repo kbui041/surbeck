@@ -25,42 +25,45 @@ export default function About() {
           <p className="about-role">Orthodontist &middot; Bellevue, Washington</p>
 
           <p className="lead">
-            Dr. Surbeck, a Tacoma native, grew up in a dental environment; his father
-            practiced general dentistry in Federal Way for over 35 years. This experience
-            allowed him to see the fulfillment that comes from serving people and providing
-            excellent dental care.
+          Dr. Surbeck grew up in Tacoma, WA and was introduced to dentistry at a very young age, as his
+father was a general dentist. However, it was his own orthodontic experience that piqued his
+interest in this specific area of dentistry. When it became apparent at the beginning of high
+school that a professional football career was unlikely, it dawned on him that orthodontics
+shared a lot in common with football. It was a team sport, required excellent planning and
+execution for success and efficiency, and had a beginning and an end.
           </p>
 
           <p>
-            Early on, Dr. Surbeck attended the Charles Wright Academy. After this excellent
-            primary education, he began his journey at Claremont McKenna College and
-            transferred to the University of Washington. During his ten years at UW, he
-            received his Bachelor of Arts degree in Business Administration, a Bachelor of
-            Science degree in zoology, a Doctorate in Dental Surgery with honors, and a
-            Master of Science degree in Orthodontics. He has continued his involvement with
-            the University of Washington, serving as a faculty member in the School of
-            Dentistry and on the board of directors for both the UW Orthodontic Alumni
-            Association and UW Dental School Alumni Association. Dr. Surbeck is also a member
-            of many other leading dental and orthodontic organizations, including: American
-            Association of Orthodontists, Pacific Coast Society of Orthodontists, and
-            Washington State Dental Association.
+          Though Dr. Surbeck played one year of college football at Claremont McKenna College, his
+sights were set on attending the University of Washington Dental School, considered one of the
+top programs in the country and it was right in his backyard (in-state tuition was also a real
+plus). After his freshman year, Dr. Surbeck transferred to UW where over the next four years
+he earned a degree in Zoology (the study of animal science) and a degree in Business
+Administration from the Fosters School of Business. His studies in business school focused on
+Human Resource Management and Organizational Behavior, which would further shape his
+insights into a “team approach” focused on consistently delivering a successful and efficient
+results.
           </p>
 
           <p>
-            Dr. Surbeck's dedication to excellence in orthodontics and service helped him
-            receive recognition in Seattle Met, being voted by his peers in the dental
-            community as a Top Orthodontist in the area for each year since 2009. That's 16
-            consecutive years and counting.
+          After attending four years of dental school and graduating with honors, Dr. Surbeck was
+selected as one of five incoming residents to attend the prestigious University of Washington
+School of Dentistry Orthodontic Residency. 2 ½ years later, Dr. Surbeck graduated and started
+his private practice in Bellevue, Washington in 2002.
           </p>
 
           <p>
-            Dr. Surbeck, his wife Katie (a Bellevue native), their daughters Claire and
-            Caroline, and their son Will reside in Bellevue. When not practicing orthodontics,
-            Dr. Surbeck enjoys outdoor adventures throughout Washington and spending time with
-            his family in the back yard. He also avidly enjoys saltwater fishing for salmon
-            and halibut, a good weekend DIY project, vegetable gardening, and cheering on the
-            Huskies.
+          Dr. Surbeck is a member of the American Association of Orthodontists and a past board
+member of both the Alumni Associations of the University of Washington School of Dentistry
+and the Graduate Orthodontic Program. He is a past part-time faculty member of the UW
+School of Dentistry, as well as the 1994 UW Homecoming King.
           </p>
+
+          <p>Dr. Surbeck and his wife Katie (a Bellevue native) have lived on the Eastside since 1999. Their 3
+adult children are in college or have graduated college and continue to live in the Seattle area.
+As an “empty nester”, Dr. Surbeck enjoys refining processes and focusing on patient care, as
+well as saltwater fishing, gardening, cooking and entertaining, and completing projects at their
+family cabin on Vancouver Island. At some point, he may get back in to teaching.</p>
         </div>
       </div>
     </section>
