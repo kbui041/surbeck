@@ -17,6 +17,16 @@ const TEAM = [
     ],
   },
   {
+    name: "Patty",
+    role: "Treatment Coordinator",
+    photo: "team-patty.jpg",
+    tone: "duo-stone",
+    paras: [
+      "Hi, I’m Patty, the Treatment Coordinator here at Surbeck Orthodontics. I’ve spent more than thirty years in orthodontics, working both chairside and in the lab making retainers and appliances. I grew up in Kirkland and started in orthodontics as a teenager, working for my childhood orthodontist — and I’ve loved it ever since.",
+      "When I’m not at work, I enjoy movie nights with my kids, Cody and Lily (who are in college and middle school), arts and crafts with Lily, time near the water, and lots of family adventures and vacations.",
+    ],
+  },
+  {
     name: "Vanessa",
     role: "Orthodontic Assistant",
     photo: "team-vanessa.jpg",

@@ -15,7 +15,7 @@ const FAQS = [
   },
   {
     q: "Will my teeth straighten out as they grow?",
-    a: "Only occasionally will teeth “spontaneously” straighten. More often than not, crowding will persist or worsen with time. The space available for the front teeth does not increase as you grow, but rather space is gained behind the last teeth as the jaws grow. In most people, after the permanent molars erupt, the space available for the front teeth decreases with age.",
+    a: "It is well known that teeth move throughout one’s lifetime. There are occasions when gradual improvement in alignment is seen as the front teeth erupt, favorably guided into better alignment by the surrounding pressure of the lips and tongue. Though this is more the exception than the rule, it’s why a period of observation is recommended to assess changes in the alignment of the front teeth. More often than not, crowding will persist or worsen with time. Unfortunately, the space available for the front teeth does not increase as you grow, but rather space is gained behind the last teeth as the upper and lower jaws elongate with growth. In most people, after the permanent molars erupt, the space available for the front teeth does not increase with age.",
   },
   {
     q: "What will happen at the initial examination appointment?",
@@ -30,12 +30,12 @@ const FAQS = [
     ],
   },
   {
-    q: "Will I need to have teeth extracted for braces?",
-    a: "Removing teeth is occasionally required to achieve the best orthodontic result, but in most cases it is not. Straight teeth and a balanced facial profile are the goal of orthodontics. However, because new technology has provided advanced orthodontic procedures, removing teeth is not always necessary for orthodontic treatment.",
+    q: "Will I need to have teeth extracted for orthodontic alignment of teeth braces?",
+    a: "Extraction of permanent teeth is only occasionally required to achieve the best orthodontic result, but this is rare. Straight teeth with a reasonably normal angulation and a balanced facial profile are the goal of orthodontics. However, because new technology has provided advanced orthodontic procedures, the irreversible nature of removing teeth is not generally necessary for orthodontic treatment.",
   },
   {
     q: "How long will it take to complete treatment?",
-    a: "Treatment time obviously depends on each patient’s specific orthodontic problem. In general, treatment times range from 12 to 30 months. The “average” time frame a person is in braces is approximately 18 months.",
+    a: "The duration of orthodontic treatment depends on each patient’s specific orthodontic issues, such as the severity of crowding and the relative balance in the positions of the upper and lower jaws. In general, treatment times range from 8 to 16 months. The “average” time frame a person is in orthodontic treatment varies depending upon whether braces are used as opposed to clear aligner treatment, and is approximately 14 months with braces, while clear aligner treatment lasts 4–6 months longer.",
   },
   {
     q: "How much will braces cost? Are financing options available? How does my insurance work?",
@@ -51,7 +51,7 @@ const FAQS = [
   },
   {
     q: "Do I need to see my family dentist while in braces?",
-    a: "Yes! Regular checkups with your family dentist are important while in braces. Your family dentist will determine the intervals between cleaning appointments while you are in braces.",
+    a: "Yes! Regular checkups with your family dentist are important while in orthodontic treatment with either braces or clear aligners. Your family dentist will determine the intervals between cleaning appointments while you are in orthodontic treatment, during the treatment planning stage of your care.",
   },
   {
     q: "Are there foods I cannot eat while I have braces?",
@@ -67,11 +67,15 @@ const FAQS = [
   },
   {
     q: "Will my child need full braces if he/she has Phase One treatment?",
-    a: "It is best to assume that your child will need full braces even after Phase One treatment. The period following Phase One treatment is called the “resting period,” during which growth and tooth eruption are closely monitored. Throughout this period, parents and patients will be kept informed of future treatment recommendations.",
+    a: [
+      "If an initial phase of orthodontic treatment is needed, it is relatively brief, and focused on a specific issue such as a crossbite of the back teeth, or insufficient space for the normal eruption of the remaining unerupted permanent canines and premolars. While this averts the potential for more lengthy or involved future orthodontic treatment, it does not ensure that the remaining unerupted permanent teeth or jaw growth discrepancies will spontaneously self-correct. My goal is to try and avoid the need for Phase I treatment unless it is absolutely necessary.",
+      "In most cases, a second phase of orthodontic treatment will be needed once all permanent teeth erupt to refine the alignment of all of the permanent teeth while also ensuring the top and bottom teeth fit together in a manner that provides a stable and protective bite.",
+      "Following completion of Phase I orthodontic treatment, your child’s dental eruption and jaw growth will be monitored and evaluated. Throughout this period, parents and patients will be kept informed of future treatment recommendations.",
+    ],
   },
   {
-    q: "Is it too late to have braces if I am already an adult?",
-    a: "A surprising percentage of our patients are adults. In fact, 25 percent of all orthodontic patients are adults. Health, happiness and self-esteem are vitally important to adults. No patient is “too old” to wear braces! Teeth retain the ability to move throughout one’s life. Don’t let them continue to shift and become more crowded, allow us to move your teeth into an optimal position for improved ease of cleaning and a beautiful smile.",
+    q: "Is it too late to straighten my teeth if I am already an adult?",
+    a: "An increasing number of our patients are adults. In fact, over 25 percent of my orthodontic patients are adults. This is not a vanity issue. There are very clear indicators that straight teeth that correctly fit together have a reduced risk of cavities, gum disease, and chipping and wear. Health, prevention of future problems, and self-esteem are vitally important to adults too. No patient is “too old” to undergo orthodontic treatment! Teeth retain the ability to move throughout one’s life. Don’t let them continue to shift and become more crowded, allow us to move your teeth into an optimal position for improved ease of cleaning and a beautiful smile.",
   },
 ];
 
@@ -111,7 +115,7 @@ export default function FAQ() {
                   </button>
                   <div className="faq-a-wrap">
                     <div className="faq-a">
-                      <p>{f.a}</p>
+                      {Array.isArray(f.a) ? f.a.map((p, j) => <p key={j}>{p}</p>) : <p>{f.a}</p>}
                       {f.listIntro && <p>{f.listIntro}</p>}
                       {f.list && (
                         <ul className="faq-sublist">

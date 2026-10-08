@@ -166,7 +166,7 @@ export default function ComplexCases() {
         </div>
       </section>
 
-      <CtaBand />
+      <CtaBand className="white"/>
     </>
   );
 }

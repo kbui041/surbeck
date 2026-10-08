@@ -509,6 +509,54 @@ textarea { min-height: 120px; resize: vertical; }
 .faq-sublist li { margin-bottom: 6px; }
 .faq-sublist li::marker { color: var(--brass); }
 
+/* "Finding the Right Orthodontist" accordion — questions (black/ink) vs.
+   Surbeck's answer (navy callout) */
+.fit-accordion { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.fit-item { border-bottom: 1px solid var(--line); }
+.fit-q {
+  width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 24px;
+  background: none; border: none; cursor: pointer; text-align: left;
+  padding: 26px 2px; font-family: var(--sans); font-weight: 600; font-size: 1.08rem;
+  color: var(--ink); transition: color .15s;
+}
+.fit-q:hover { color: var(--brass); }
+.fit-item.open .fit-q { color: var(--navy); }
+.fit-icon { flex: 0 0 auto; width: 24px; text-align: center; font-size: 1.5rem; line-height: 1; color: var(--brass); font-weight: 400; transition: transform .25s ease; }
+.fit-item.open .fit-icon { transform: rotate(180deg); }
+
+.fit-body-wrap { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+.fit-item.open .fit-body-wrap { max-height: 2400px; }
+.fit-body { padding: 0 2px 30px; }
+
+.fit-context { color: var(--ink); max-width: 70ch; line-height: 1.75; margin: 0 0 18px; }
+
+.fit-label {
+  display: block; font-family: var(--sans); font-size: .7rem; font-weight: 700;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--slate); margin-bottom: 10px;
+}
+.fit-label-answer { color: var(--brass); }
+
+.fit-ask { margin: 0 0 24px; }
+.fit-ask ul { margin: 0; padding-left: 22px; max-width: 70ch; color: var(--ink); line-height: 1.7; }
+.fit-ask li { margin-bottom: 6px; }
+.fit-ask li::marker { color: var(--slate); }
+
+.fit-answer {
+  background: var(--navy); color: #dfe7ee; border-radius: var(--r-md);
+  padding: 24px 28px; max-width: 70ch;
+}
+.fit-answer p { color: #dfe7ee; max-width: 66ch; line-height: 1.75; margin: 0 0 12px; }
+.fit-answer p:last-of-type { margin-bottom: 0; }
+.fit-answer .fit-label-answer { color: var(--sand); }
+.fit-answer-link {
+  display: inline-flex; align-items: center; gap: 6px; margin-top: 16px;
+  font-family: var(--sans); font-size: .78rem; font-weight: 600; letter-spacing: .06em;
+  text-transform: uppercase; color: #fff; border-bottom: 1px solid rgba(255,255,255,.4);
+  padding-bottom: 2px;
+}
+.fit-answer-link:hover { color: var(--sand); border-color: var(--sand); }
+
+
 /* inline text link with arrow */
 .textlink { color: var(--navy); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; }
 .textlink::after { content: "\2192"; transition: transform .2s ease; }

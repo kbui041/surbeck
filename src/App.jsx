@@ -6,6 +6,7 @@ import ScrollTopButton from "./components/ScrollTopButton.jsx";
 import Home from "./pages/Home.jsx";
 import WhySurbeck from "./pages/WhySurbeck.jsx";
 import Philosophy from "./pages/Philosophy.jsx";
+import FindingTheRightOrthodontist from "./pages/FindingTheRightOrthodontist.jsx";
 import WhyFaster from "./pages/WhyFaster.jsx";
 import TreatmentProcess from "./pages/TreatmentProcess.jsx";
 import BracesVsInvisalign from "./pages/BracesVsInvisalign.jsx";
@@ -35,6 +36,7 @@ export default function App() {
 
           <Route path="/why-surbeck" element={<WhySurbeck />} />
           <Route path="/philosophy" element={<Philosophy />} />
+          <Route path="/finding-the-right-orthodontist" element={<FindingTheRightOrthodontist />} />
           <Route path="/why-faster" element={<WhyFaster />} />
 
           <Route path="/treatment-process" element={<TreatmentProcess />} />

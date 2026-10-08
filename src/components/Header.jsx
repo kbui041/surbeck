@@ -9,6 +9,7 @@ const links = [
       { to: "/why-surbeck", label: "Why Surbeck Orthodontics" },
       { to: "/philosophy", label: "Our Philosophy" },
       { to: "/why-faster", label: "Why Treatment Can Be Faster" },
+      { to: "/finding-the-right-orthodontist", label: "Finding the Right Orthodontist" },
     ],
   },
   {
