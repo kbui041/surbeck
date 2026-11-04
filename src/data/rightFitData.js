@@ -6,7 +6,7 @@
 const RIGHT_FIT = [
   {
     id: "one-doctor",
-    title: "Is a Single Orthodontist Right for You?",
+    title: "Will You See the Same Orthodontist at Each Visit?",
     context:
       "Some orthodontic practices have one orthodontist. Others have several doctors who share responsibility for patients, and larger organizations may have doctors rotate between locations. Neither model is necessarily right for everyone.",
     ask: [

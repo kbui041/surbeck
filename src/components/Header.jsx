@@ -7,9 +7,8 @@ const links = [
     label: "Why Surbeck",
     children: [
       { to: "/why-surbeck", label: "Why Surbeck Orthodontics" },
-      { to: "/philosophy", label: "Our Philosophy" },
-      { to: "/why-faster", label: "Why Treatment Can Be Faster" },
       { to: "/finding-the-right-orthodontist", label: "Finding the Right Orthodontist" },
+      { to: "/why-faster", label: "Why Treatment Can Be Faster" },
     ],
   },
   {
@@ -37,6 +36,7 @@ const links = [
       { to: "/patient-education", label: "Patient Education Library" },
       { to: "/resources/videos", label: "Treatment Videos" },
       { to: "/resources/new-patient-forms", label: "New Patient Forms" },
+      { to: "/resources/retainers", label: "Retainers & Retention" },
       { to: "/resources/faq", label: "Frequently Asked Questions" },
       { to: "/financial", label: "Financial Information" },
     ],

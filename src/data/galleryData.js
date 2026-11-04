@@ -1,15 +1,17 @@
 /* =========================================================================
    BEFORE & AFTER GALLERY
    -------------------------------------------------------------------------
-   Every case in the gallery is listed here. To add photos for a case:
+   Every case in the gallery is listed here. Each case links to a single
+   case-summary PDF (the patient's full before/after record) rather than
+   separate before/after images:
 
-   1. Save two images in  public/gallery/  named after the case's `slug`:
-        <slug>-before.jpg   and   <slug>-after.jpg
-      e.g. for slug "a-north"  ->  a-north-before.jpg / a-north-after.jpg
-   2. Change  photos: false  to  photos: true  on that case.
-
-   Cases with photos: false show a labeled placeholder, so the gallery stays
-   complete while photos are being added.
+   1. Save the case PDF in  public/gallery/  named after the case's `slug`:
+        <slug>.pdf
+      e.g. for slug "a-north"  ->  a-north.pdf
+   2. `pdf` defaults to true, since every case currently has one on file.
+      Set  pdf: false  on a case if its PDF isn't available yet — it will
+      show a labeled "Before/After" placeholder instead, so the gallery
+      stays complete while a record is pending.
 
    months: treatment length in months. Use null if not recorded.
    ========================================================================= */
@@ -96,13 +98,13 @@ export const TOPICS = {
   },
 };
 
-const c = (group, category, patient, months, slug, photos = false) => ({
+const c = (group, category, patient, months, slug, pdf = true) => ({
   group,
   category,
   patient,
   months,
   slug,
-  photos,
+  pdf,
 });
 
 export const CASES = [

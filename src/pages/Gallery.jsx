@@ -123,20 +123,38 @@ export default function Gallery() {
           <div className="grid cols-3">
             {shown.map((x) => (
               <article className="ba" key={x.slug}>
-                <div className="ba-imgs">
-                  <div className="ba-img">
-                    {x.photos && (
-                      <img src={asset(`gallery/${x.slug}-before.jpg`)} alt="" loading="lazy" />
-                    )}
-                    <span className="ba-label">Before</span>
+                {x.pdf ? (
+                  <a
+                    className="ba-pdf"
+                    href={asset(`gallery/${x.slug}.pdf`)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={asset(`gallery/thumbs/${x.slug}.jpg`)}
+                      alt={`${x.patient} — before and after treatment`}
+                      loading="lazy"
+                    />
+                    <span className="ba-pdf-overlay">
+                      <svg viewBox="0 0 24 24" className="ba-pdf-icon" aria-hidden="true">
+                        <path
+                          fill="currentColor"
+                          d="M6 2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm8 1.5V8h4.5L14 3.5z"
+                        />
+                      </svg>
+                      <span className="ba-pdf-label">View Full Case (PDF)</span>
+                    </span>
+                  </a>
+                ) : (
+                  <div className="ba-imgs">
+                    <div className="ba-img">
+                      <span className="ba-label">Before</span>
+                    </div>
+                    <div className="ba-img">
+                      <span className="ba-label">After</span>
+                    </div>
                   </div>
-                  <div className="ba-img">
-                    {x.photos && (
-                      <img src={asset(`gallery/${x.slug}-after.jpg`)} alt="" loading="lazy" />
-                    )}
-                    <span className="ba-label">After</span>
-                  </div>
-                </div>
+                )}
                 <div className="ba-meta">
                   <div className="row">
                     <h4>{x.patient}</h4>

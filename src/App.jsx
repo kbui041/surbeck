@@ -5,7 +5,6 @@ import ScrollToTop from "./components/ScrollToTop.jsx";
 import ScrollTopButton from "./components/ScrollTopButton.jsx";
 import Home from "./pages/Home.jsx";
 import WhySurbeck from "./pages/WhySurbeck.jsx";
-import Philosophy from "./pages/Philosophy.jsx";
 import FindingTheRightOrthodontist from "./pages/FindingTheRightOrthodontist.jsx";
 import WhyFaster from "./pages/WhyFaster.jsx";
 import TreatmentProcess from "./pages/TreatmentProcess.jsx";
@@ -19,6 +18,7 @@ import Videos from "./pages/Videos.jsx";
 import Education from "./pages/Education.jsx";
 import EducationArticle from "./pages/EducationArticle.jsx";
 import NewPatientForms from "./pages/NewPatientForms.jsx";
+import RetainersRetention from "./pages/RetainersRetention.jsx";
 import FAQ from "./pages/FAQ.jsx";
 import Financial from "./pages/Financial.jsx";
 import Referrals from "./pages/Referrals.jsx";
@@ -35,7 +35,6 @@ export default function App() {
           <Route path="/" element={<Home />} />
 
           <Route path="/why-surbeck" element={<WhySurbeck />} />
-          <Route path="/philosophy" element={<Philosophy />} />
           <Route path="/finding-the-right-orthodontist" element={<FindingTheRightOrthodontist />} />
           <Route path="/why-faster" element={<WhyFaster />} />
 
@@ -53,6 +52,7 @@ export default function App() {
           <Route path="/patient-education/:slug" element={<EducationArticle />} />
           <Route path="/resources/videos" element={<Videos />} />
           <Route path="/resources/new-patient-forms" element={<NewPatientForms />} />
+          <Route path="/resources/retainers" element={<RetainersRetention />} />
           <Route path="/resources/faq" element={<FAQ />} />
           <Route path="/financial" element={<Financial />} />
 

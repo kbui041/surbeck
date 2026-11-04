@@ -656,3 +656,82 @@ textarea { min-height: 120px; resize: vertical; }
   .hours-bar .days span { display: block; }
   .hours-bar .sep { display: none; }
 }
+
+/* ---- Retainers & Retention page ---- */
+.split-3 { grid-template-columns: 1fr 1fr 1fr; align-items: start; }
+
+.ret-sub-list { margin: 4px 0 20px; display: flex; flex-direction: column; gap: 10px; }
+.ret-sub { border: 1px solid var(--line); border-radius: var(--r-md); background: var(--white); }
+.ret-sub summary { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 20px; font-family: var(--serif); font-size: 1.05rem; color: var(--navy); }
+.ret-sub summary::-webkit-details-marker { display: none; }
+.ret-sub summary:hover { color: var(--brass); }
+.ret-sub-icon { flex: 0 0 auto; width: 20px; text-align: center; color: var(--brass); font-size: 1.3rem; line-height: 1; transition: transform .25s ease; }
+.ret-sub[open] .ret-sub-icon { transform: rotate(45deg); }
+.ret-sub-body { padding: 0 20px 20px; border-top: 1px solid var(--line); }
+.ret-sub-body p { color: var(--ink); max-width: 70ch; line-height: 1.75; margin: 16px 0 12px; }
+.ret-sub-body p:last-child { margin-bottom: 0; }
+
+.ret-steps { list-style: none; margin: 8px 0 0; padding: 0; counter-reset: ret-step; }
+.ret-steps li { counter-increment: ret-step; position: relative; padding: 0 0 26px 48px; border-left: 1px solid var(--line); margin-left: 14px; }
+.ret-steps li:last-child { padding-bottom: 0; border-left-color: transparent; }
+.ret-steps li::before { content: counter(ret-step); position: absolute; left: -15px; top: 0; width: 30px; height: 30px; border-radius: 50%; background: var(--navy); color: var(--white); font-family: var(--serif); font-size: .95rem; display: flex; align-items: center; justify-content: center; }
+.ret-steps h4 { margin: 0 0 6px; font-size: 1.02rem; }
+.ret-steps p { margin: 0; color: var(--ink); max-width: 68ch; line-height: 1.7; }
+
+.ret-golden { margin: 14px 0 0; padding-left: 0; list-style: none; max-width: 70ch; }
+.ret-golden li { margin-bottom: 12px; line-height: 1.7; color: var(--ink); padding-left: 22px; position: relative; }
+.ret-golden li::before { content: "\2022"; position: absolute; left: 0; color: var(--brass); font-weight: 700; }
+
+.ret-fees { display: flex; flex-direction: column; gap: 28px; margin-top: 6px; }
+.ret-fee-group h4 { font-family: var(--serif); font-size: 1.1rem; color: var(--navy); margin: 0 0 10px; }
+.ret-fee-list { list-style: none; margin: 0 0 10px; padding: 0; border-top: 1px solid var(--line); }
+.ret-fee-list li { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; padding: 10px 0; border-bottom: 1px solid var(--line); color: var(--ink); }
+.ret-fee-value { font-family: var(--serif); color: var(--brass); white-space: nowrap; }
+
+@media (max-width: 860px) {
+  .split-3 { grid-template-columns: 1fr; }
+}
+
+/* ---- Before/After gallery: full-case PDF preview tile ---- */
+.ba-pdf {
+  position: relative;
+  display: block;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+  background: linear-gradient(135deg, #ece6da, #e1dbca);
+  text-decoration: none;
+}
+.ba-pdf img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform .35s ease;
+}
+.ba-pdf:hover img { transform: scale(1.04); }
+.ba-pdf-overlay {
+  position: absolute;
+  inset: auto 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 12px;
+  background: linear-gradient(0deg, rgba(27,49,70,.92), rgba(27,49,70,0));
+  color: var(--white);
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity .2s ease, transform .2s ease;
+}
+.ba-pdf:hover .ba-pdf-overlay,
+.ba-pdf:focus-visible .ba-pdf-overlay { opacity: 1; transform: translateY(0); }
+.ba-pdf-icon { width: 16px; height: 16px; flex: 0 0 auto; color: var(--sand); }
+.ba-pdf-label { font-family: var(--serif); font-style: italic; font-size: .92rem; letter-spacing: .01em; }
+
+@media (hover: none) {
+  /* touch devices can't hover: keep the label visible so it's clear it's tappable */
+  .ba-pdf-overlay { opacity: 1; transform: translateY(0); padding: 8px 10px; }
+  .ba-pdf-label { font-size: .82rem; }
+}

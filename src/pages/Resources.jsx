@@ -13,6 +13,9 @@ const duringTreatment = [
   { k: "04", h: "Orthodontic Emergencies", p: "What to do for a loose bracket or wire." },
   { k: "05", h: "Foods to Enjoy & Avoid", p: "Protecting your appliance during treatment." },
 ];
+const afterTreatment = [
+  { k: "01", h: "Retainers & Retention", p: "Retainer types, wear schedules, care, and fees.", to: "/resources/retainers" },
+];
 
 function ResList({ items }) {
   return (
@@ -50,7 +53,7 @@ export default function Resources() {
 
       <section className="section">
         <div className="wrap">
-          <div className="split">
+          <div className="split split-3">
             <div className="panel">
               <h3 className="panel-title">New Patients</h3>
               <ResList items={newPatient} />
@@ -58,6 +61,10 @@ export default function Resources() {
             <div className="panel">
               <h3 className="panel-title">During Treatment</h3>
               <ResList items={duringTreatment} />
+            </div>
+            <div className="panel">
+              <h3 className="panel-title">After Treatment</h3>
+              <ResList items={afterTreatment} />
             </div>
           </div>
         </div>
