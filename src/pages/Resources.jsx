@@ -5,12 +5,13 @@ const newPatient = [
   { k: "01", h: "Your First Visit", p: "What to expect at your initial consultation." },
   { k: "02", h: "New Patient Forms", p: "Complete your intake paperwork ahead of your appointment.", to: "/resources/new-patient-forms" },
   { k: "03", h: "Insurance & Financing", p: "Flexible payment options and the plans we accept." },
+  { k: "04", h: "Adult Orthodontics", p: "It's never too late to invest in your smile.", to: "/resources/adult-orthodontics" },
 ];
 const duringTreatment = [
   { k: "01", h: "Treatment Videos", p: "Short animations showing how appliances work.", to: "/resources/videos" },
   { k: "02", h: "Braces Care", p: "Keeping your braces and teeth clean and healthy." },
   { k: "03", h: "Aligner Care", p: "Wear schedule and cleaning tips for clear aligners." },
-  { k: "04", h: "Orthodontic Emergencies", p: "What to do for a loose bracket or wire." },
+  { k: "04", h: "Broken Brackets & Emergencies", p: "What to do for a loose bracket or wire.", to: "/resources/emergencies" },
   { k: "05", h: "Foods to Enjoy & Avoid", p: "Protecting your appliance during treatment." },
 ];
 const afterTreatment = [

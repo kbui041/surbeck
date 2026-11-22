@@ -115,9 +115,6 @@ export const ARTICLES = [
       {
         p: "Every child grows differently, and every smile deserves an individualized approach. Whether Dr. Surbeck recommends beginning Phase I treatment today or simply monitoring growth over the coming months or years, you can feel confident that every recommendation is made with one goal in mind: providing the right treatment, at the right time, for the right reason.",
       },
-      {
-        pull: "Because exceptional orthodontics isn't about treating earlier: it's about treating smarter.",
-      },
     ],
   },
 
@@ -172,83 +169,33 @@ export const ARTICLES = [
   },
 
   {
-    slug: "appointment-frequency",
-    title: "Appointment Frequency",
-    blurb: "Why we see patients every three to four weeks instead of every six to eight.",
-    body: [
-      {
-        p: "Orthodontic treatment is a dynamic biological process. Teeth begin responding to orthodontic forces immediately after an adjustment, and as they move, the mechanics of treatment continually evolve. Regular evaluations allow us to monitor that progress closely, make timely refinements, identify broken appliances or unwanted tooth movement early, and reinforce patient compliance before small issues become larger setbacks. At Surbeck Orthodontics, we intentionally schedule most active treatment appointments every 3–4 weeks, allowing us to make smaller, more precise adjustments while maintaining consistent momentum throughout treatment. Seeing patients more regularly also allows us the opportunity to fix any broken brackets that might have gone unattended, further helping to continue orthodontic progress and avoid any unnecessary delays.",
-      },
-      {
-        p: "While longer appointment intervals may be appropriate in certain situations, our philosophy is that more frequent monitoring provides more opportunities to optimize treatment mechanics and keep patients progressing efficiently toward their goals. Rather than allowing six, seven, or even eight weeks to pass before the next evaluation, we prefer to remain actively engaged in each patient's progress. This proactive approach is one of the many ways we strive to deliver treatment that is not only highly precise, but often significantly more efficient, resulting in shorter overall treatment times, fewer unexpected delays, and exceptional long-term outcomes.",
-      },
-      {
-        figure: "appointment-intervals.jpg",
-        alt: "More frequent visits, faster results. A typical practice sees patients every 6 to 8 weeks, about 6 to 7 visits per year, with typical completion at 24 or more months. Surbeck Orthodontics sees patients every 3 to 4 weeks, about 13 to 15 visits per year, with typical completion at 14 to 16 months, an average of 30 to 40 percent faster treatment time. More frequent visits give twice as many opportunities to monitor tooth movement, adjust biomechanics, catch problems early, and reinforce compliance.",
-        caption: "Why appointment intervals matter: consistent monitoring, consistent progress, better results.",
-      },
-    ],
-  },
-
-  {
     slug: "braces-care",
     title: "Braces Care & Foods to Avoid",
     blurb: "Keeping your appliance and your teeth healthy during treatment.",
-    body: [],
-  },
-
-  {
-    slug: "emergencies",
-    title: "Broken Brackets & Emergencies",
-    blurb: "What to do for a loose bracket or poking wire, and why breakage matters.",
     body: [
       {
-        p: "Orthodontic treatment works best when every part of your braces is functioning exactly as intended. While the occasional broken bracket or poking wire is a normal part of treatment, keeping your appliances intact is one of the most important ways you can help us achieve an exceptional result on time.",
-      },
-      { h: "Broken Brackets Happen" },
-      {
-        p: "Braces are remarkably strong, but they are not indestructible. Occasionally, a bracket may come loose despite everyone's best efforts. This is especially common during the first few weeks after braces are placed, while patients are adjusting to eating and caring for their new appliances. That's perfectly normal, and we're always happy to help.",
+        p: "Getting braces doesn't mean you have to say goodbye to all your favorite foods! At Surbeck Orthodontics, we believe that understanding how you eat is just as important as what you eat.",
       },
       {
-        p: "Repeated bracket breakage, however, can significantly affect treatment. When a bracket comes off a tooth, that tooth often stops moving as planned. In some cases, Dr. Surbeck must temporarily step back to a lighter orthodontic wire in order to regain alignment before treatment can progress. While this is an important part of protecting your smile, it also means valuable treatment time has been lost. Simply put, broken brackets are one of the most common reasons orthodontic treatment takes longer than originally estimated.",
+        p: "While certain foods require extra caution, one of the most effective ways to protect your brackets is surprisingly simple: take smaller bites!",
       },
       {
-        figure: "braces-care.jpg",
-        size: "narrow",
-        alt: "Caring for your braces. Green light foods, enjoy these: yogurt, smoothies, scrambled eggs, pasta, soup, mashed potatoes, rice, oatmeal, macaroni and cheese, soft fruits such as bananas, berries and melon, and cottage cheese. Proceed with caution, enjoy carefully by not biting directly into them: apples sliced into small pieces, corn cut off the cob, French bread torn into small pieces, sandwiches and burgers cut into smaller pieces, carrots cut into small pieces, and pears sliced into small pieces. When in doubt, cut it up, chew with your back teeth, and take your time. Please avoid, these can damage braces. Hard foods: ice, hard candy, nuts, popcorn including kernels, corn nuts, beef jerky, hard pretzels, whole apples, whole carrots, and crusty artisan breads. Sticky and chewy foods: caramel, taffy, Starburst, Skittles, gummy candies, licorice, fruit snacks, bubble gum, and chewing gum. Best ways to care for your braces: brush thoroughly after every meal whenever possible, angling your toothbrush above and below each bracket; floss daily using floss threaders or a water flosser; keep dental appointments and continue seeing your general dentist every six months for routine cleanings and examinations; protect your braces by wearing a mouthguard during sports and never chewing on pens, pencils, fingernails or other objects; and if a bracket comes loose, a wire is poking, or something feels broken, contact our office.",
-        caption:
-          "Excellent oral hygiene, careful food choices, and keeping your appointments are the keys to a smooth, successful orthodontic journey.",
+        figure: "braces-food-guide.png",
+        alt: "Braces Food Guide. Braces-friendly choices, safe for your braces: soft eggs, pasta, tender meats like chicken and fish, rice, yogurt, cheese, soft fruits like bananas and berries, and cooked vegetables. Soda is okay in moderation, up to one per week. Foods to avoid, which can damage your braces, break brackets, or get stuck in the wires: hard, whole fruits and veggies (try cutting into small, bite-sized pieces), hard or crunchy snacks like popcorn, hard chips, or ice, tough chewy foods like bagels and jerky, sticky or chewy candies like caramels and gummies, hard nuts like almonds and peanuts, and foods you bite directly into like corn on the cob or whole apples. Helpful tips: cut foods into small, bite-sized pieces, chew gently, avoid very hard, sticky, or chewy foods, and keep your teeth and braces clean.",
+        caption: "What to enjoy, and what to approach with care, while you're in braces.",
+      },
+      { h: "Why Do Brackets Break?" },
+      {
+        p: "Brackets are carefully bonded to your teeth with an adhesive strong enough to withstand the normal forces of orthodontic treatment. However, they're not indestructible!",
       },
       {
-        note: "This graphic's footer shows an Okemos, Michigan address and a 517 phone number. It needs to be corrected to the Bellevue office before this page is published.",
-      },
-      { h: "What Should I Do If a Bracket Breaks?" },
-      {
-        p: "If you notice a loose bracket, broken appliance, or poking wire, please contact our office as soon as possible. Whenever possible, we'll schedule a brief emergency visit to repair the appliance promptly. Emergency appointments are typically scheduled around our regularly planned patient care, often during the middle of the day (before and after our lunch hour), allowing us to address emergencies without delaying other patients' appointments.",
-      },
-      { h: "Preventing Breakage" },
-      {
-        p: "The best way to avoid treatment delays is to protect your braces throughout treatment. Patients who avoid hard, crunchy, and sticky foods, maintain excellent oral hygiene, attend scheduled appointments, and follow our recommendations closely are far more likely to complete treatment within the anticipated timeframe. When eating, we recommend breaking your food into smaller, manageable bites and focusing on chewing with your back molars. Our tongue and cheeks typically do an excellent job of guiding food to the appropriate areas of our teeth. However, when we take large bites, it can be difficult for these muscles to handle the excess food, which increases the risk of broken brackets. By keeping food towards the back molars and chewing in smaller portions, you can help avoid unnecessary pressure on your braces.",
+        p: "When you take a large bite of food, particularly something crunchy, hard, or dense, your teeth must work harder to break it down. The larger the amount of food you're trying to chew at once, the greater the potential forces placed on your brackets.",
       },
       {
-        p: "To better understand this concept, imagine trying to open a stubborn pickle jar. No matter how many times you try, the jar won't budge. However, as soon as you hand it to someone else, they easily open it without issue. In a similar manner, when you eat something that isn't ideal for your braces, such as Starburst, Tootsie Rolls, Skittles, Laffy Taffy, or anything requiring a tearing or ripping motion like pizza crust, beef jerky, Subway sandwiches, bagels, or biting into whole fruits and vegetables, you might not experience a broken bracket immediately. But after eating something within the normal range of acceptable foods, you might find that a bracket has fallen off. This occurs because your braces can only withstand a certain amount of pressure before they break.",
+        p: "Think about biting into a large, crunchy apple versus chewing a small, thin slice. Both are the same food, but the forces involved can be very different.",
       },
       {
-        p: "To prevent damage, it's crucial to avoid using your teeth for tasks they were not designed for, such as chewing on pen caps, opening packages, or chewing on ice. These activities can easily lead to broken brackets, which can delay your treatment and require repairs.",
-      },
-      {
-        p: "Orthodontic treatment is a partnership. We are committed to providing precise treatment planning and attentive care, while our patients play an equally important role in protecting the appliances that make treatment possible.",
-      },
-      { h: "Our Broken Bracket Policy" },
-      {
-        p: "We understand there is a learning curve with braces, which is why we don't expect perfection. During the first three weeks after braces are placed, any broken brackets are repaired at no charge while patients become accustomed to their new appliances. Following this adjustment period, we also provide three additional complimentary bracket repairs. Beginning with the fourth broken bracket, a $25 repair fee is assessed. Each additional broken bracket thereafter incurs a $50 repair fee.",
-      },
-      {
-        p: "This policy is not intended to be punitive. Rather, it reflects the very real impact repeated bracket breakage has on treatment efficiency, scheduling, and overall treatment success. Our hope is simply to encourage patients to protect their braces, minimize unnecessary treatment delays, and help everyone achieve the healthiest, most efficient orthodontic outcome possible.",
-      },
-      { h: "We're Here to Help" },
-      {
-        p: "Orthodontic emergencies happen, and when they do, we're here for you. If something doesn't feel right, whether it's a loose bracket, a poking wire, or another concern, please don't wait until your next scheduled visit. Contact our office, and we'll help determine the best next step to keep your treatment comfortable, efficient, and moving forward.",
+        p: "When excessive force is placed on a bracket, the adhesive bond holding it to the tooth may fail, causing the bracket to come loose.",
       },
     ],
   },
@@ -284,7 +231,15 @@ export const ARTICLES = [
       },
       { h: "Your Retainers" },
       {
-        p: "Your retainers are one of the most important investments you can make in preserving your orthodontic results. If your retainer becomes lost, damaged, or no longer fits properly, please contact our office as soon as possible. Teeth can begin to shift surprisingly quickly, and delaying replacement often makes it more difficult to maintain your results. Replacement retainers are $250 per arch. As a courtesy, we offer 50% off your first replacement retainer, should one become necessary; future retainer replacements will be provided at full cost.",
+        p: "Your retainers are one of the most important investments you can make in preserving your orthodontic results. If your retainer becomes lost, damaged, or no longer fits properly, please contact our office as soon as possible. Teeth can begin to shift surprisingly quickly, and delaying replacement often makes it more difficult to maintain your results.",
+      },
+      {
+        linkp: {
+          before: "For current replacement costs, see our ",
+          text: "Retainers & Retention fees",
+          to: "/resources/retainers#fees",
+          after: ".",
+        },
       },
       {
         p: "We typically take impressions to make retainers, and will do so at the end of a patient's treatment. The impressions create a cast of the patient's teeth and the cast is then used to mold the new retainer. The cast is only accurate for one retainer, so if a retainer replacement is needed, another impression will need to be taken.",
@@ -318,44 +273,19 @@ export const ARTICLES = [
     blurb: "The options, what each costs, and how they compare.",
     body: [
       {
-        note: "Open question from the draft: do we want to advertise this at all, and will offering clear brackets on only the upper six teeth steer patients away? This page is live and linked; delete this article's body to pull it back to “Coming soon.”",
-      },
-      {
         p: "At Surbeck Orthodontics, our standard appliance of choice is a high-quality stainless steel bracket. Metal brackets are exceptionally strong, durable, and efficient, making them our preferred option for achieving predictable, outstanding orthodontic results.",
       },
       {
         p: "For patients seeking a more discreet appearance, we also offer ceramic (“clear”) brackets on the upper six front teeth for an additional fee of $477. Because these teeth are the most visible when smiling and speaking, ceramic brackets provide a subtle aesthetic enhancement while maintaining the strength and efficiency of metal brackets throughout the remainder of the smile.",
       },
       {
-        p: "While ceramic brackets offer an attractive cosmetic alternative, they are not without trade-offs. Ceramic brackets are inherently more brittle than stainless steel and may be more susceptible to chipping or fracturing under heavy biting forces. Additionally, because of the material's physical properties, they may not provide the same degree of treatment efficiency in certain clinical situations. For these reasons, Dr. Surbeck generally recommends limiting ceramic brackets to the upper front teeth and does not routinely place them on the lower teeth, where biting forces are significantly greater and the risk of bracket damage is higher.",
+        p: "While ceramic brackets offer an attractive cosmetic alternative, Dr. Surbeck generally recommends limiting ceramic brackets to the upper front teeth and does not routinely place them on the lower teeth, where biting forces are significantly greater and the risk of bracket damage is higher.",
+      },
+      {
+        p: "There are cases when exceptions can be made; if you are interested, please ask your Treatment Coordinator.",
       },
       {
         p: "Ultimately, both metal and ceramic braces are excellent treatment options. The decision comes down to balancing aesthetics with durability and treatment efficiency. During your consultation, Dr. Surbeck will discuss whether ceramic brackets are an appropriate choice for your individual treatment goals and lifestyle.",
-      },
-    ],
-  },
-
-  {
-    slug: "adult-teen",
-    title: "Adult Orthodontics",
-    blurb: "It's never too late to invest in your smile.",
-    body: [
-      { lead: "It's never too late to invest in your smile." },
-      {
-        p: "Many adults assume orthodontic treatment is something reserved for children and teenagers, or perhaps something they “missed their chance” to do years ago. The truth is, some of our favorite patients are adults, and caring for them has become one of the defining aspects of our practice. Whether you're considering orthodontic treatment for the very first time, revisiting treatment after relapse, preparing for restorative dentistry or dental implants, or simply ready to invest in yourself, you'll find that Surbeck Orthodontics was built with patients like you in mind.",
-      },
-      {
-        p: "We recognize that adult patients often have different priorities than younger patients. You have careers, families, busy schedules, and a clear understanding of the investment you're making in your oral health. That's why we've intentionally created an orthodontic experience that feels personal, thoughtful, and remarkably unhurried. As a private, single-doctor practice, every appointment is led by Dr. Surbeck himself. He doesn't simply stop by your chair to review your progress before moving on to the next patient. Instead, he remains actively involved throughout each visit, taking the time to explain what he's seeing, answer questions, listen to your concerns, and ensure you're comfortable with every stage of treatment. We believe the best orthodontic care is built on trust, communication, and partnership, and not hurried appointments or assembly-line dentistry.",
-      },
-      { h: "Specialized Care for Adult Smiles" },
-      {
-        p: "Adult orthodontics often involves considerations that simply don't exist in younger patients. Previous dental work, crowns, implants, missing teeth, gum health, bite changes, and coordination with your general dentist or other dental specialists frequently require a more comprehensive treatment approach. These interdisciplinary cases are an area of particular interest and expertise for Dr. Surbeck, and thoughtful planning is at the heart of every recommendation we make. Rather than applying a one-size-fits-all solution, every treatment plan is carefully designed around your individual goals, your oral health, and your long-term stability.",
-      },
-      {
-        p: "We understand that most adults aren't eager to spend years in orthodontic treatment. Our practice is intentionally designed to make treatment as efficient as clinically possible. Through meticulous treatment planning, precise bracket placement, and appointment intervals every three to four weeks, we are often able to complete treatment more quickly than practices that schedule visits six to eight weeks apart—all while maintaining exceptional attention to detail and long-term stability.",
-      },
-      {
-        p: "Perhaps most importantly, you'll never feel like a passive participant in your own treatment. We believe your questions, observations, and goals matter. Every adjustment appointment is an opportunity for conversation, collaboration, and thoughtful clinical decision-making. Whether you're hoping to improve your smile, prepare for implants or restorative dentistry, correct long-standing bite concerns, or simply gain the confidence you've always wanted, we're honored to be part of that journey.",
       },
     ],
   },
@@ -382,9 +312,6 @@ export const ARTICLES = [
           "Interest-free monthly payments. Many families choose to spread the cost of treatment over time. Our in-house financing includes no interest, requires an initial down payment, and allows the remaining balance to be conveniently paid through automatic monthly payments. Monthly plans can also be combined with HSA or FSA funds when appropriate.",
         ],
       },
-      {
-        p: "Our goal is simple: provide financial flexibility so you can choose the payment option that works best for your family.",
-      },
       { h: "Understanding Orthodontic Insurance" },
       {
         p: "Insurance can be confusing, but fortunately orthodontic insurance is often much more flexible than people realize. One of the most common questions we hear is, “Do you accept my insurance?” While Surbeck Orthodontics is not contracted with most insurance companies, that does not necessarily mean your orthodontic benefits cannot be used in our office.",
@@ -393,7 +320,7 @@ export const ARTICLES = [
         p: "Unlike many medical insurance plans, orthodontic benefits are structured differently. In many cases, the orthodontic benefit available to you is the same whether you choose an in-network or out-of-network orthodontist. This means your choice of provider can often be based on who you trust to care for your smile and not simply on network participation. Because every insurance policy is unique, we always recommend verifying your specific orthodontic benefit before beginning treatment.",
       },
       {
-        p: "As a courtesy, Steph is happy to review your insurance plan, verify your orthodontic benefits, and help you understand how they apply to treatment at Surbeck Orthodontics. While we can't determine what another orthodontic office may charge or how they process insurance, we can clearly explain the benefits available to you in our practice. Whether we're in-network with your plan or not, our team is happy to submit insurance claims on your behalf and provide the necessary documentation to help you maximize any orthodontic benefits available through your policy.",
+        p: "As a courtesy, we are happy to review your insurance plan, verify your orthodontic benefits, and help you understand how they apply to treatment at Surbeck Orthodontics. While we can't determine what another orthodontic office may charge or how they process insurance, we can clearly explain the benefits available to you in our practice. Whether we're in-network with your plan or not, our team is happy to submit insurance claims on your behalf and provide the necessary documentation to help you maximize any orthodontic benefits available through your policy.",
       },
     ],
   },

@@ -112,6 +112,16 @@ export default function EducationArticle() {
                   <strong>Editor's note:</strong> {b.note}
                 </p>
               ) : null;
+            if (b.linkp)
+              return (
+                <p key={k}>
+                  {b.linkp.before}
+                  <Link to={b.linkp.to} style={{ textDecoration: "underline" }}>
+                    {b.linkp.text}
+                  </Link>
+                  {b.linkp.after}
+                </p>
+              );
             return <p key={k}>{b.p}</p>;
           })}
 

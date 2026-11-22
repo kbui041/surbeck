@@ -132,7 +132,7 @@ export default function Gallery() {
                   >
                     <img
                       src={asset(`gallery/thumbs/${x.slug}.jpg`)}
-                      alt={`${x.patient} — before and after treatment`}
+                      alt={`${x.category} — before and after treatment`}
                       loading="lazy"
                     />
                     <span className="ba-pdf-overlay">
@@ -157,13 +157,10 @@ export default function Gallery() {
                 )}
                 <div className="ba-meta">
                   <div className="row">
-                    <h4>{x.patient}</h4>
+                    <h4>{x.category}</h4>
                     {x.months != null && <span className="len">{x.months} mo</span>}
                   </div>
-                  <span className="cat">
-                    {x.category}
-                    {group === "All" ? ` · ${x.group}` : ""}
-                  </span>
+                  {group === "All" && <span className="cat">{x.group} patient</span>}
                 </div>
               </article>
             ))}

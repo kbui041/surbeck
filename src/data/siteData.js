@@ -21,12 +21,20 @@ export const PRACTICE = {
   hours: "Mon–Thu by appointment",
 };
 
+/* Google reviews. This links to a Google search for the practice by name and
+   address, which reliably surfaces our real Google Business Profile (with its
+   actual review count/rating and reviews) without us hosting or re-typing any
+   review text ourselves. If we get a dedicated Google Maps/Business Profile
+   link later, swap it in here. */
+export const GOOGLE_REVIEWS_URL =
+  "https://www.google.com/search?q=Surbeck+Orthodontics+375+118th+Ave+SE+Bellevue+WA+reviews";
+
 /* Office hours shown in the footer bar. Edit times here. */
 export const HOURS = [
   { day: "Mon", time: "7:30am – 5:00pm" },
   { day: "Tues", time: "8:30am – 5:00pm" },
   { day: "Weds", time: "7:30am – 5:00pm" },
-  { day: "Thurs", time: "9:30am – 5:00pm" },
+  { day: "Thurs", time: "8:15am – 5:00pm" },
 ];
 
 /* Patient testimonial featured on the home page. */

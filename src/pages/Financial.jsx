@@ -78,7 +78,6 @@ export default function Financial() {
             your treatment, are part of delivering accurate, specialist care. We will explain
             any associated fee clearly and up front. The fees for diagnostic records do not commit you to treatment, but allow Dr. Surbeck the appropriate data to treatment plan in the greatest detail, with accuracy, so we can provide you with the best orthodontic care possible.
           </p>
-          <p className="muted"><em>Placeholder copy, ready for the office's final figures and policy.</em></p>
         </div>
       </section>
 

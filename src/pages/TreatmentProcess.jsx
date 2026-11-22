@@ -7,7 +7,10 @@ const BEFORE_TREATMENT = [
     p: (
       <>
         A 45-minute appointment where we take your initial photos (facial and intraoral) and
-        begin to understand more about you, your smile goals, and your orthodontic case.
+        begin to understand more about you, your smile goals, and your orthodontic case. We do
+        not place braces at the consultation appointment. Rather, we place value on educating
+        patients about the process, so that each and every patient understands their treatment
+        from start to finish, before anything is placed on their teeth.
         Following your consultation, Dr. Surbeck writes a detailed, comprehensive letter
         reviewing every point discussed, so there's no need to bring a notepad, we'll take the
         notes for you. We send a similar letter to your dentist, so they can begin to learn
@@ -45,12 +48,15 @@ const BEFORE_TREATMENT = [
     h: "Treatment Plan Review",
     p: (
       <>
-        A 45-minute, one-on-one appointment with Dr. Surbeck to review the results of his
-        treatment planning, using the diagnostic records taken. This visit is held during the
-        lunch hour or at the end of the day, so Dr. Surbeck can give it his undivided attention.
-        We want patients to feel free to ask any and all questions about their proposed
-        treatment. At the end of this visit, you'll meet with our Treatment Coordinator to
-        review treatment fees and payment plan options.
+        A 45-minute, one-on-one appointment with Dr. Surbeck, where we invite the patient and
+        their families, to review the results of his treatment planning, using the diagnostic
+        records taken. This visit is held during the lunch hour or at the end of the day, so Dr.
+        Surbeck can give it his undivided attention. We want patients to feel free to ask any and
+        all questions about their proposed treatment. It's at this visit that patients will learn
+        everything entailing their treatment. At the end of this appointment, you'll meet with our
+        Treatment Coordinator to review treatment fees and payment plan options. We place a high
+        value on patient education, as we feel it helps to directly lead to successful orthodontic
+        treatment.
         <br />
         <br />
         <Link to="/financial" className="textlink">
@@ -101,7 +107,7 @@ export default function TreatmentProcess() {
 
       <section className="section">
         <div className="wrap" style={{ maxWidth: 880 }}>
-          <h2 style={{ marginBottom: 28 }}>Before Treatment</h2>
+          <h2 id="before-treatment" style={{ marginBottom: 28 }}>Before Treatment</h2>
           <ol className="steps">
             {BEFORE_TREATMENT.map((s) => (
               <li className="step" key={s.h}>
@@ -117,7 +123,7 @@ export default function TreatmentProcess() {
 
       <section className="section paper">
         <div className="wrap" style={{ maxWidth: 880 }}>
-          <h2 style={{ marginBottom: 28 }}>Getting Braces Placed</h2>
+          <h2 id="getting-braces-placed" style={{ marginBottom: 28 }}>Getting Braces Placed</h2>
           <p className="lead" style={{ marginBottom: 32 }}>
             In orthodontics, the process of adding brackets to your teeth is called
             "bonding." Our office uses an <i>INDIRECT BONDING</i> approach, the most accurate method
@@ -139,7 +145,7 @@ export default function TreatmentProcess() {
 
       <section className="section">
         <div className="wrap" style={{ maxWidth: 880 }}>
-          <h2>Adjustment Appointments</h2>
+          <h2 id="adjustment-appointments">Adjustment Appointments</h2>
           <p>
             Once the braces are placed and bonded, adjustment appointments begin. These
             typically occur every 3–5 weeks, depending on our office's availability, your
@@ -155,7 +161,7 @@ export default function TreatmentProcess() {
 
       <section className="section paper">
         <div className="wrap" style={{ maxWidth:880 }}>
-          <h2>Debonding</h2>
+          <h2 id="debonding">Debonding</h2>
           <p>
             We rarely remove all the braces at once. Instead, we take a slower, more methodical
             approach. Once teeth are straightened on the horizontal plane and then the

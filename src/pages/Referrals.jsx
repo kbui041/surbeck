@@ -97,6 +97,14 @@ export default function Referrals() {
                 <input type="text" name="patient_name" required />
               </div>
               <div className="field">
+                <label>Patient's email</label>
+                <input type="email" name="patient_email" />
+              </div>
+              <div className="field">
+                <label>Patient's phone</label>
+                <input type="tel" name="patient_phone" />
+              </div>
+              <div className="field">
                 <label>Radiographs sent?</label>
                 <div className="radio-group">
                   <label><input type="radio" name="radiographs" value="yes" /> Yes</label>

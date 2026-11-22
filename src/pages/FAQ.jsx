@@ -1,13 +1,26 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const FAQS = [
+  {
+    q: "Is it too late to straighten my teeth if I am already an adult?",
+    a: "An increasing number of our patients are adults. In fact, over 25 percent of my orthodontic patients are adults. This is not a vanity issue. There are very clear indicators that straight teeth that correctly fit together have a reduced risk of cavities, gum disease, and chipping and wear. Health, prevention of future problems, and self-esteem are vitally important to adults too. No patient is “too old” to undergo orthodontic treatment! Teeth retain the ability to move throughout one’s life. Don’t let them continue to shift and become more crowded, allow us to move your teeth into an optimal position for improved ease of cleaning and a beautiful smile.",
+  },
   {
     q: "Is it required that my family dentist schedule my appointment with the orthodontist?",
     a: "No, it is not. Many of our patients are referred by their family dentist, yet many other patients take the initiative to schedule an examination themselves.",
   },
   {
     q: "Do you accept insurance?",
-    a: "Our office is committed to helping you maximize your insurance benefits. Because insurance policies vary, we can only estimate your coverage in good faith but cannot guarantee coverage due to the complexities of insurance contracts. Your estimated patient portion can be paid with one of our payment options. We will submit claims to your insurance company.",
+    a: (
+      <>
+        Yes! See our{" "}
+        <Link to="/financial" style={{ textDecoration: "underline" }}>
+          Financial Information
+        </Link>{" "}
+        page for how insurance and payment work at our office.
+      </>
+    ),
   },
   {
     q: "At what age should I schedule an appointment for an orthodontic screening?",
@@ -19,7 +32,7 @@ const FAQS = [
   },
   {
     q: "What will happen at the initial examination appointment?",
-    a: "Upon arriving, each patient and parent will be seen by the staff and doctor who will acclimate you to our office and prepare for the initial exam. We will take the necessary photographs to allow us to make a proper diagnosis. The doctor will then complete a brief, but thorough, exam.",
+    a: "Upon arriving, each patient and parent will be seen by our Treatment Coordinator who will acclimate you to our office and prepare for the initial exam. We will take the necessary photographs to allow us to make a proper diagnosis. Dr. Surbeck will then complete a brief, but thorough, exam.",
     listIntro: "There are five essential questions that we will cover during the initial examination:",
     list: [
       "Is there an orthodontic problem, and if so, what is it?",
@@ -43,40 +56,83 @@ const FAQS = [
   },
   {
     q: "How often will I have appointments?",
-    a: "Appointments are scheduled according to each patient’s needs. Most patients in braces will be seen every four to six weeks. If there are specific situations that require more frequent monitoring, we will schedule appointments accordingly.",
+    a: "Appointments are scheduled according to each patient’s needs. Most patients in braces will be seen every three to five weeks. If there are specific situations that require more frequent monitoring, we will schedule appointments accordingly.",
   },
   {
     q: "Can I schedule all of my appointments after school?",
-    a: "Unfortunately, we cannot schedule all appointments for students during after-school hours. However, because most appointments are scheduled five to 10 weeks apart, most patients will miss minimal school due to their orthodontic treatments. We will, however, make a sincere effort to meet your scheduling needs.",
+    a: "While we do our best to accommodate school and work schedules, some appointments will need to take place during the day. Our high-touch, low-volume approach ensures that Dr. Surbeck can dedicate the time and attention each patient deserves, rather than rushing through appointments to accommodate peak scheduling hours.",
   },
   {
     q: "Do I need to see my family dentist while in braces?",
-    a: "Yes! Regular checkups with your family dentist are important while in orthodontic treatment with either braces or clear aligners. Your family dentist will determine the intervals between cleaning appointments while you are in orthodontic treatment, during the treatment planning stage of your care.",
+    a: [
+      "Yes! Regular checkups with your family dentist are important while in orthodontic treatment with either braces or clear aligners. Your family dentist will determine the intervals between cleaning appointments while you are in orthodontic treatment, during the treatment planning stage of your care.",
+      <>
+        If your dental office requires your orthodontic wires to be removed before a cleaning,
+        please notify us <strong>at least one month in advance</strong> so we can coordinate
+        scheduling between both offices. This process requires three appointments on the same
+        day:
+      </>,
+    ],
+    list: [
+      <><strong>Surbeck Orthodontics:</strong> Wire removal</>,
+      <><strong>Your dental office:</strong> Dental cleaning</>,
+      <><strong>Surbeck Orthodontics:</strong> Wire replacement and adjustment</>,
+    ],
+    after:
+      "Whenever possible, we will coordinate these visits with your next regularly scheduled orthodontic adjustment to minimize additional appointments and disruptions to your schedule.",
   },
   {
     q: "Are there foods I cannot eat while I have braces?",
-    a: "Yes. Once treatment begins, we will explain the complete instructions and provide a comprehensive list of foods to avoid. Some of those foods include: ice, hard candy, raw vegetables and all sticky foods (i.e. caramel and taffy). You can avoid most emergency appointments to repair broken or damaged braces by carefully following our instructions.",
+    a: [
+      "Yes. Once treatment begins, we will explain the complete instructions and provide a comprehensive list of foods to avoid. Some of those foods include: ice, hard candy, raw vegetables and all sticky foods (i.e. caramel and taffy). You can avoid most emergency appointments to repair broken or damaged braces by carefully following our instructions.",
+      <>
+        For a more detailed guide,{" "}
+        <Link to="/patient-education/braces-care" style={{ textDecoration: "underline" }}>
+          see Braces Care &amp; Foods to Avoid
+        </Link>
+        .
+      </>,
+    ],
   },
   {
     q: "What is an emergency appointment? How are those handled?",
-    a: "If your braces are causing extreme pain or if something breaks, you should call our office. In most cases, if possible, we may address these issues over the telephone. However, if you require an emergency appointment, we will promptly make arrangements for you to be seen.",
+    a: (
+      <>
+        An emergency appointment is an un-planned appointment where our team will repair broken
+        brackets, snip any long wires, or take care of any unexpected changes to your
+        braces/teeth, caused outside the treatment plan. Our emergency appointments are scheduled
+        before and after our lunch hour, so that we can continue to accommodate our regular,
+        routine appointments. There is no fee for emergency appointments, as we understand that
+        things happen! However, repeated and excessive broken brackets may{" "}
+        <Link to="/resources/emergencies#bracket-policy" style={{ textDecoration: "underline" }}>
+          incur a charge
+        </Link>{" "}
+        and may cause a delay in overall treatment time.
+      </>
+    ),
   },
   {
     q: "What is Phase One (early) treatment?",
-    a: "Phase One treatment, if necessary, is usually initiated on children between the ages of 7 and 10. Phase One treatment lasts about 5-14 months. The primary objective for Phase One treatment is to address significant problems to prevent them from becoming more severe and to improve self-esteem and self-image.",
+    a: [
+      "Phase One treatment, if necessary, is usually initiated on children between the ages of 7 and 10. Phase One treatment lasts about 5-14 months. The primary objective for Phase One treatment is to address significant problems to prevent them from becoming more severe and to improve self-esteem and self-image.",
+      <>
+        Read more in{" "}
+        <Link to="/patient-education/early-treatment" style={{ textDecoration: "underline" }}>
+          Early (Phase One) Treatment
+        </Link>
+        .
+      </>,
+    ],
   },
   {
     q: "Will my child need full braces if he/she has Phase One treatment?",
     a: [
-      "If an initial phase of orthodontic treatment is needed, it is relatively brief, and focused on a specific issue such as a crossbite of the back teeth, or insufficient space for the normal eruption of the remaining unerupted permanent canines and premolars. While this averts the potential for more lengthy or involved future orthodontic treatment, it does not ensure that the remaining unerupted permanent teeth or jaw growth discrepancies will spontaneously self-correct. My goal is to try and avoid the need for Phase I treatment unless it is absolutely necessary.",
-      "In most cases, a second phase of orthodontic treatment will be needed once all permanent teeth erupt to refine the alignment of all of the permanent teeth while also ensuring the top and bottom teeth fit together in a manner that provides a stable and protective bite.",
+      "If an initial phase of orthodontic treatment is needed, it is relatively brief, and focused on a specific issue such as a crossbite of the back teeth, or insufficient space for the normal eruption of the remaining unerupted permanent canines and premolars. While this averts the potential for more lengthy or involved future orthodontic treatment, it does not ensure that the remaining unerupted permanent teeth or jaw growth discrepancies will spontaneously self-correct. Our goal is to try and avoid the need for Phase I treatment unless it is absolutely necessary.",
+      "In most cases, a second phase of orthodontic treatment will be needed once all permanent teeth erupt to refine the alignment of all of the permanent teeth while also ensuring the top and bottom teeth fit together in a manner that provides a stable and protective bite. However, we have seen cases where a secondary phase of treatment is not needed.",
       "Following completion of Phase I orthodontic treatment, your child’s dental eruption and jaw growth will be monitored and evaluated. Throughout this period, parents and patients will be kept informed of future treatment recommendations.",
     ],
   },
-  {
-    q: "Is it too late to straighten my teeth if I am already an adult?",
-    a: "An increasing number of our patients are adults. In fact, over 25 percent of my orthodontic patients are adults. This is not a vanity issue. There are very clear indicators that straight teeth that correctly fit together have a reduced risk of cavities, gum disease, and chipping and wear. Health, prevention of future problems, and self-esteem are vitally important to adults too. No patient is “too old” to undergo orthodontic treatment! Teeth retain the ability to move throughout one’s life. Don’t let them continue to shift and become more crowded, allow us to move your teeth into an optimal position for improved ease of cleaning and a beautiful smile.",
-  },
+
 ];
 
 export default function FAQ() {
@@ -122,6 +178,7 @@ export default function FAQ() {
                           {f.list.map((item, j) => <li key={j}>{item}</li>)}
                         </ul>
                       )}
+                      {f.after && <p>{f.after}</p>}
                     </div>
                   </div>
                 </li>

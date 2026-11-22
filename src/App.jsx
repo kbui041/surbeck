@@ -19,6 +19,8 @@ import Education from "./pages/Education.jsx";
 import EducationArticle from "./pages/EducationArticle.jsx";
 import NewPatientForms from "./pages/NewPatientForms.jsx";
 import RetainersRetention from "./pages/RetainersRetention.jsx";
+import Emergencies from "./pages/Emergencies.jsx";
+import AdultOrthodontics from "./pages/AdultOrthodontics.jsx";
 import FAQ from "./pages/FAQ.jsx";
 import Financial from "./pages/Financial.jsx";
 import Referrals from "./pages/Referrals.jsx";
@@ -53,6 +55,8 @@ export default function App() {
           <Route path="/resources/videos" element={<Videos />} />
           <Route path="/resources/new-patient-forms" element={<NewPatientForms />} />
           <Route path="/resources/retainers" element={<RetainersRetention />} />
+          <Route path="/resources/emergencies" element={<Emergencies />} />
+          <Route path="/resources/adult-orthodontics" element={<AdultOrthodontics />} />
           <Route path="/resources/faq" element={<FAQ />} />
           <Route path="/financial" element={<Financial />} />
 

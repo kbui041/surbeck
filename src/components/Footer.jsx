@@ -61,7 +61,13 @@ export default function Footer() {
                 {h.day.toUpperCase()} {h.time}
               </span>
             ))}
+            <span className="fh-asterisk">*</span>
           </div>
+          <p className="fh-note">
+            *We're typically open Monday–Thursday, but occasionally close for a Monday or
+            Thursday. <Link to="/#calendar">Check our monthly calendar</Link> for the exact
+            days we're in the office.
+          </p>
         </div>
 
         <div className="footer-base">

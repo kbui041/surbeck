@@ -3,7 +3,7 @@ import Announcements from "../components/Announcements.jsx";
 import AvailabilityCalendar from "../components/AvailabilityCalendar.jsx";
 import BeforeAfter from "../components/BeforeAfter.jsx";
 import CtaBand from "../components/CtaBand.jsx";
-import { PRACTICE, TESTIMONIAL } from "../data/siteData.js";
+import { PRACTICE, TESTIMONIAL, GOOGLE_REVIEWS_URL } from "../data/siteData.js";
 import { asset } from "../lib/asset.js";
 
 export default function Home() {
@@ -33,8 +33,23 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ANNOUNCEMENTS + CALENDAR */}
+      <section className="section" id="calendar">
+        <div className="wrap">
+          <h2 style={{ marginBottom: 10 }}>Announcements &amp; Office Hours</h2>
+          <p className="lead" style={{ maxWidth: "58ch", marginBottom: 44 }}>
+            Office updates and the days we're open this month. Already in treatment? Check
+            here first for a quick reference on our availability.
+          </p>
+          <div className="announce-grid">
+            <Announcements />
+            <AvailabilityCalendar />
+          </div>
+        </div>
+      </section>
+
       {/* INTRO PROSE */}
-      <section className="section">
+      <section className="section paper">
         <div className="wrap" style={{ maxWidth: "70ch" }}>
           <h2>Personal, Attentive Care</h2>
           <p>
@@ -53,7 +68,7 @@ export default function Home() {
       </section>
 
       {/* BEFORE & AFTER */}
-      <section className="section paper" id="results">
+      <section className="section" id="results">
         <div className="wrap">
           <div className="section-head" style={{ marginBottom: 40, maxWidth: "62ch" }}>
             <h2>Before &amp; After</h2>
@@ -63,28 +78,10 @@ export default function Home() {
             </p>
           </div>
           <BeforeAfter />
-          <p className="muted" style={{ marginTop: 24, fontSize: ".9rem" }}>
-            Placeholder panels shown. Add real before-and-after patient photos in
-            <code style={{ margin: "0 4px" }}>src/data/siteData.js</code> when available.
-          </p>
         </div>
       </section>
 
-      {/* ANNOUNCEMENTS + CALENDAR */}
-      <section className="section">
-        <div className="wrap">
-          <h2 style={{ marginBottom: 10 }}>Announcements &amp; Office Hours</h2>
-          <p className="lead" style={{ maxWidth: "58ch", marginBottom: 44 }}>
-            Office updates and the days we're open this month.
-          </p>
-          <div className="announce-grid">
-            <Announcements />
-            <AvailabilityCalendar />
-          </div>
-        </div>
-      </section>
-
-      {/* TESTIMONIAL */}
+      {/* TESTIMONIAL + REVIEWS */}
       <section className="section paper">
         <div className="wrap">
           <figure className="quote">
@@ -93,6 +90,16 @@ export default function Home() {
             </blockquote>
             <cite>{TESTIMONIAL.author}</cite>
           </figure>
+          <p style={{ textAlign: "center", marginTop: 28 }}>
+            <a
+              href={GOOGLE_REVIEWS_URL}
+              className="textlink"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Read our reviews on Google
+            </a>
+          </p>
         </div>
       </section>
 

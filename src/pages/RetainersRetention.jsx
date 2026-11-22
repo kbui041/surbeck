@@ -1,9 +1,11 @@
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 import CtaBand from "../components/CtaBand.jsx";
 import RETAINERS from "../data/retainersData.js";
 
 export default function RetainersRetention() {
-  const [openSet, setOpenSet] = useState(() => new Set());
+  const { hash } = useLocation();
+  const [openSet, setOpenSet] = useState(() => new Set(hash ? [hash.slice(1)] : []));
 
   const toggle = (id) =>
     setOpenSet((prev) => {
@@ -31,7 +33,7 @@ export default function RetainersRetention() {
             {RETAINERS.map((item) => {
               const isOpen = openSet.has(item.id);
               return (
-                <li className={`faq-item ${isOpen ? "open" : ""}`} key={item.id}>
+                <li className={`faq-item ${isOpen ? "open" : ""}`} key={item.id} id={item.id}>
                   <button
                     className="faq-q"
                     aria-expanded={isOpen}

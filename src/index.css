@@ -607,6 +607,9 @@ textarea { min-height: 120px; resize: vertical; }
 .fh-label { font-size: .72rem; letter-spacing: .18em; text-transform: uppercase; color: #fff; font-weight: 600; }
 .fh-days { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: .85rem; font-weight: 600; color: #c4d0dd; }
 .fh-days .sep { color: var(--sand); margin-right: 18px; }
+.fh-asterisk { color: var(--sand); font-weight: 700; }
+.fh-note { flex-basis: 100%; margin: 6px 0 0; font-size: .78rem; color: #93a2b4; }
+.fh-note a { text-decoration: underline; }
 .footer-base { margin-top: 18px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,.1); font-size: .8rem; color: #7e8fa1; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
 
 /* ---------------- utilities ---------------- */
@@ -683,7 +686,7 @@ textarea { min-height: 120px; resize: vertical; }
 .ret-golden li::before { content: "\2022"; position: absolute; left: 0; color: var(--brass); font-weight: 700; }
 
 .ret-fees { display: flex; flex-direction: column; gap: 28px; margin-top: 6px; }
-.ret-fee-group h4 { font-family: var(--serif); font-size: 1.1rem; color: var(--navy); margin: 0 0 10px; }
+.ret-fee-group h4 { font-size: 1.1rem; color: var(--navy); margin: 0 0 10px; }
 .ret-fee-list { list-style: none; margin: 0 0 10px; padding: 0; border-top: 1px solid var(--line); }
 .ret-fee-list li { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; padding: 10px 0; border-bottom: 1px solid var(--line); color: var(--ink); }
 .ret-fee-value { font-family: var(--serif); color: var(--brass); white-space: nowrap; }
@@ -735,3 +738,48 @@ textarea { min-height: 120px; resize: vertical; }
   .ba-pdf-overlay { opacity: 1; transform: translateY(0); padding: 8px 10px; }
   .ba-pdf-label { font-size: .82rem; }
 }
+
+/* ---- Collapsible "read more" sections (Why Surbeck) ---- */
+.why-more { margin-top: 14px; }
+.why-more summary {
+  list-style: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--navy);
+  font-weight: 600;
+  font-size: .95rem;
+  padding: 2px 0;
+}
+.why-more summary::-webkit-details-marker { display: none; }
+.why-more summary::before {
+  content: "+";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--brass);
+  color: var(--brass);
+  font-size: 1rem;
+  line-height: 1;
+  transition: transform .2s ease;
+}
+.why-more[open] summary::before { content: "\2212"; }
+.why-more summary:hover { color: var(--brass); }
+.why-more-body { padding-top: 16px; }
+.why-more-body p { margin: 0 0 16px; }
+.why-more-body p:last-child { margin-bottom: 0; }
+
+/* ---- Subtle "stands out, but not red/bold/underlined" callout ---- */
+.emphasis-note {
+  background: var(--cream-2);
+  border-left: 3px solid var(--brass);
+  border-radius: 0 var(--r-sm) var(--r-sm) 0;
+  padding: 14px 20px;
+  margin: 18px 0;
+  color: var(--ink);
+}
+.emphasis-note p { margin: 0; }
