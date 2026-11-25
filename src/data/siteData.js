@@ -21,13 +21,11 @@ export const PRACTICE = {
   hours: "Mon–Thu by appointment",
 };
 
-/* Google reviews. This links to a Google search for the practice by name and
-   address, which reliably surfaces our real Google Business Profile (with its
-   actual review count/rating and reviews) without us hosting or re-typing any
-   review text ourselves. If we get a dedicated Google Maps/Business Profile
-   link later, swap it in here. */
-export const GOOGLE_REVIEWS_URL =
-  "https://www.google.com/search?q=Surbeck+Orthodontics+375+118th+Ave+SE+Bellevue+WA+reviews";
+/* Google reviews. Dedicated Google Maps Business Profile link for the
+   practice (5.0 stars, 38 reviews as of Nov 2026) — this opens straight to
+   the real listing with its actual review count/rating and reviews, without
+   us hosting or re-typing any review text ourselves. */
+export const GOOGLE_REVIEWS_URL = "https://maps.app.goo.gl/3wMDGziojh5iy9fP6";
 
 /* Office hours shown in the footer bar. Edit times here. */
 export const HOURS = [
