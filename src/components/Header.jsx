@@ -91,12 +91,7 @@ export default function Header() {
               (location.pathname === l.to ||
                 l.children.some((c) => location.pathname === c.to));
             return l.children ? (
-              <div
-                className="nav-item has-sub"
-                key={l.to}
-                onMouseEnter={() => setOpenSub(l.to)}
-                onMouseLeave={() => setOpenSub(null)}
-              >
+              <div className="nav-item has-sub" key={l.to}>
                 <NavLink
                   to={l.to}
                   onClick={closeAll}
@@ -104,6 +99,17 @@ export default function Header() {
                 >
                   {l.label}
                 </NavLink>
+                <button
+                  type="button"
+                  className="submenu-toggle"
+                  aria-expanded={openSub === l.to}
+                  aria-label={`${openSub === l.to ? "Collapse" : "Expand"} ${l.label} submenu`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    setOpenSub((prev) => (prev === l.to ? null : l.to));
+                  }}
+                />
                 <div className={`submenu ${openSub === l.to ? "open" : ""}`}>
                   {l.children.map((c) => (
                     <NavLink key={c.to} to={c.to} onClick={closeAll}>

@@ -139,7 +139,7 @@ img { max-width: 100%; display: block; }
   opacity: 0; visibility: hidden; transform: translateY(6px); transition: all .16s; z-index: 30;
 }
 .submenu::before { content: ""; position: absolute; left: 28px; top: -7px; width: 12px; height: 12px; background: var(--navy); transform: rotate(45deg); border-radius: 2px; }
-.submenu.open { opacity: 1; visibility: visible; transform: translateY(2px); }
+.nav-item.has-sub:hover .submenu, .submenu.open { opacity: 1; visibility: visible; transform: translateY(2px); }
 .submenu a { text-transform: none; letter-spacing: .01em; font-weight: 500; font-size: .92rem; color: #fff; padding: 11px 16px; border-radius: var(--r-sm); position: relative; white-space: nowrap; }
 .submenu a::after { display: none; }
 .submenu a:hover { background: rgba(255,255,255,.10); color: var(--sand); }
@@ -640,11 +640,24 @@ textarea { min-height: 120px; resize: vertical; }
 @media (max-width: 1100px) {
   .nav { position: fixed; inset: 0 0 0 auto; width: min(78vw, 320px); background: #fff; flex-direction: column; align-items: stretch; gap: 0; padding: 88px 26px 26px; transform: translateX(100%); transition: transform .25s ease; box-shadow: -10px 0 40px rgba(0,0,0,.1); overflow-y: auto; overflow-x: hidden; }
   .nav.open { transform: translateX(0); }
-  .nav > a, .nav-item > a { width: 100%; padding: 15px 0; border-bottom: 1px solid var(--line); }
+  .nav > a { width: 100%; padding: 15px 0; border-bottom: 1px solid var(--line); }
   .nav a::after { display: none; }
   .nav .nav-cta { margin-top: 18px; }
-  .nav-item.has-sub { width: 100%; display: block; }
-  .submenu { position: static; opacity: 1; visibility: visible; transform: none; box-shadow: none; border: 0; padding: 0 0 0 14px; min-width: 0; }
+
+  /* Collapsed-by-default accordion: each group's sub-links are hidden
+     until its toggle button is tapped, so the mobile menu opens short
+     instead of dumping the full ~25-link site map on screen at once. */
+  .nav-item.has-sub { width: 100%; display: flex; flex-wrap: wrap; align-items: center; border-bottom: 1px solid var(--line); }
+  .nav-item.has-sub > a { flex: 1 1 auto; padding: 15px 0; }
+  .submenu-toggle { flex: 0 0 44px; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; background: none; border: 0; position: relative; cursor: pointer; }
+  .submenu-toggle::before, .submenu-toggle::after { content: ""; position: absolute; top: 50%; left: 50%; background: var(--navy); transition: transform .2s ease; }
+  .submenu-toggle::before { width: 14px; height: 1.5px; transform: translate(-50%, -50%); }
+  .submenu-toggle::after { width: 1.5px; height: 14px; transform: translate(-50%, -50%); }
+  .submenu-toggle[aria-expanded="true"]::after { transform: translate(-50%, -50%) rotate(90deg) scaleY(0); }
+
+  .submenu { flex-basis: 100%; position: static; opacity: 1; visibility: visible; transform: none; box-shadow: none; border: 0; padding: 0 0 0 14px; min-width: 0; display: none; }
+  .submenu::before { display: none; }
+  .submenu.open { display: flex; }
   .submenu a { padding: 12px 0; border-bottom: 1px solid var(--line); white-space: normal; }
   .nav-toggle { display: block; z-index: 70; }
 }
