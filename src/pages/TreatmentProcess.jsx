@@ -126,7 +126,7 @@ export default function TreatmentProcess() {
           <h2 id="getting-braces-placed" style={{ marginBottom: 28 }}>Getting Braces Placed</h2>
           <p className="lead" style={{ marginBottom: 32 }}>
             In orthodontics, the process of adding brackets to your teeth is called
-            "bonding." Our office uses an <i>INDIRECT BONDING</i> approach, the most accurate method
+            "bonding." Our office uses an <strong>indirect bonding</strong> approach, the most accurate method
             of placement, generally completed over a series of three carefully timed
             appointments.
           </p>

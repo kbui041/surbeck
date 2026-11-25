@@ -28,7 +28,7 @@ export default function Home() {
             <p className="hero-note">New patient consultations available for children, teens, and adults.</p>
           </div>
           <div className="hero-art">
-            <img src={asset("logo-mark.png")} alt="Surbeck Orthodontics" />
+            <img src={asset("dr-surbeck-hero.jpg")} alt="Dr. Burleigh Surbeck, Surbeck Orthodontics" />
           </div>
         </div>
       </section>

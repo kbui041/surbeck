@@ -65,7 +65,7 @@ export default function Gallery() {
     <>
       <section className="page-intro">
         <div className="wrap">
-          <h1>Before &amp; After Gallery</h1>
+          <h1>Smile Gallery</h1>
           <p className="lead">
             Real patients, real results, each shown with the actual treatment time. Browse by
             patient age and by the problem we were treating.

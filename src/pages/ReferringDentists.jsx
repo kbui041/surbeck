@@ -41,7 +41,7 @@ export default function ReferringDentists() {
             it from there, keeping you informed through consultation, planning, and treatment.
           </p>
           <p style={{ marginTop: 18 }}>
-            <Link to="/referrals" className="btn">Submit a Doctor Referral</Link>
+            <Link to="/referrals#doctor-referral" className="btn">Submit a Doctor Referral</Link>
           </p>
           <p className="muted" style={{ marginTop: 18 }}>
             Questions about a case? Call us at <a href={PRACTICE.phoneHref}>{PRACTICE.phone}</a>.

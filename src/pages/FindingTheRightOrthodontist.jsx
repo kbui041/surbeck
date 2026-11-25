@@ -153,7 +153,11 @@ export default function FindingTheRightOrthodontist() {
           </div>
           <div className="grid cols-3">
             {SUMMARY.map((s, i) => (
-              <div className="feature" key={i}>
+              <div
+                className="feature"
+                key={i}
+                style={i === SUMMARY.length - 1 ? { gridColumn: 2 } : undefined}
+              >
                 <h3>{s.h}</h3>
                 <p>{s.p}</p>
               </div>

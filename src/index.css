@@ -10,9 +10,9 @@
   --slate: #51718c;         /* muted slate for nav/links */
   --ink: #2d3338;           /* body text */
   --muted: #6f767b;
-  --cream: #f6f0e5;         /* warm ivory surface */
-  --cream-2: #efe6d6;
-  --sand: #cbb88f;          /* tan */
+  --cream: #e5e8f6;         /* light blue surface (sampled from Dr. Surbeck's hero photo) */
+  --cream-2: #d6daef;
+  --sand: #8f98cb;          /* blue accent, replaces the former tan */
   --brass: #a6843f;         /* gold accent (use sparingly) */
   --white: #ffffff;
   --line: #e6dfce;          /* warm hairline */
@@ -30,7 +30,7 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
 
 body {
   margin: 0;
@@ -41,6 +41,7 @@ body {
   font-size: 17px;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 
 h1, h2 { font-family: var(--serif); font-weight: 500; color: var(--navy); line-height: 1.1; letter-spacing: -0.01em; margin: 0 0 .4em; }
@@ -106,7 +107,7 @@ img { max-width: 100%; display: block; }
 .nav .nav-cta:hover { background: var(--navy); border-color: var(--navy); color: #fff; }
 
 /* ---------------- header (slim) ---------------- */
-.header { position: sticky; top: 0; z-index: 60; background: rgba(255,255,255,.96); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+.header { position: sticky; top: 0; z-index: 60; background: rgba(255,255,255,.96); border-bottom: 1px solid var(--line); }
 .header .wrap { display: flex; align-items: center; justify-content: space-between; padding-top: 16px; padding-bottom: 16px; gap: 24px; }
 
 .brand-img { height: 58px; width: auto; display: block; }
@@ -185,7 +186,7 @@ img { max-width: 100%; display: block; }
 .hero-cred { margin-top: 30px; padding-top: 22px; border-top: 1px solid var(--line); font-size: .92rem; color: var(--muted); letter-spacing: .01em; }
 .hero-cred strong { color: var(--navy); font-weight: 600; }
 .hero-art { display: flex; justify-content: center; align-items: center; }
-.hero-art img { width: 100%; max-width: 540px; height: auto; }
+.hero-art img { width: 100%; max-width: 420px; height: auto; border-radius: var(--r-md); box-shadow: 0 28px 60px rgba(27,49,70,.18); }
 
 /* intro statement band */
 .statement { text-align: center; }
@@ -631,18 +632,25 @@ textarea { min-height: 120px; resize: vertical; }
   .about-split { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; }
   .footer-top { grid-template-columns: 1fr; gap: 40px; }
 }
-@media (max-width: 760px) {
-  body { font-size: 16px; }
-  .section { padding: 66px 0; }
-  .nav { position: fixed; inset: 0 0 0 auto; width: min(78vw, 320px); background: #fff; flex-direction: column; align-items: stretch; gap: 0; padding: 88px 26px 26px; transform: translateX(100%); transition: transform .25s ease; box-shadow: -10px 0 40px rgba(0,0,0,.1); }
+/* Switch to the slide-in mobile nav earlier than the general content
+   breakpoint below: with the full set of top-level nav items plus the
+   "Book a Consult" button, the horizontal nav bar needs roughly 1040px
+   of room. Below that (common laptop/tablet window widths, e.g.
+   1024x768), items were being pushed off the right edge of the window. */
+@media (max-width: 1100px) {
+  .nav { position: fixed; inset: 0 0 0 auto; width: min(78vw, 320px); background: #fff; flex-direction: column; align-items: stretch; gap: 0; padding: 88px 26px 26px; transform: translateX(100%); transition: transform .25s ease; box-shadow: -10px 0 40px rgba(0,0,0,.1); overflow-y: auto; overflow-x: hidden; }
   .nav.open { transform: translateX(0); }
   .nav > a, .nav-item > a { width: 100%; padding: 15px 0; border-bottom: 1px solid var(--line); }
   .nav a::after { display: none; }
   .nav .nav-cta { margin-top: 18px; }
   .nav-item.has-sub { width: 100%; }
   .submenu { position: static; opacity: 1; visibility: visible; transform: none; box-shadow: none; border: 0; padding: 0 0 0 14px; min-width: 0; }
-  .submenu a { padding: 12px 0; border-bottom: 1px solid var(--line); }
+  .submenu a { padding: 12px 0; border-bottom: 1px solid var(--line); white-space: normal; }
   .nav-toggle { display: block; z-index: 70; }
+}
+@media (max-width: 760px) {
+  body { font-size: 16px; }
+  .section { padding: 66px 0; }
   .cols-2, .grid-form { grid-template-columns: 1fr; }
   .bio-row { grid-template-columns: 1fr; gap: 24px; }
   .bio-photo { position: static; max-width: 260px; }
@@ -658,6 +666,8 @@ textarea { min-height: 120px; resize: vertical; }
   .ann-item { grid-template-columns: 1fr; gap: 6px; }
   .hours-bar .days span { display: block; }
   .hours-bar .sep { display: none; }
+  .gal-tabs { flex-wrap: wrap; row-gap: 10px; }
+  .gal-tab { margin-right: 20px; }
 }
 
 /* ---- Retainers & Retention page ---- */

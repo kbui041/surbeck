@@ -24,7 +24,7 @@ const links = [
       { to: "/complex-cases", label: "Complex Cases" },
     ],
   },
-  { to: "/gallery", label: "Results" },
+  { to: "/gallery", label: "Smile Gallery" },
   {
     to: "/about",
     label: "About",

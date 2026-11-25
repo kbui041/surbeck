@@ -103,6 +103,7 @@ export const RESULTS = [
    category must be one of the VIDEO_CATEGORIES listed underneath. */
 export const VIDEO_CATEGORIES = [
   "Appliances",
+  "Procedures",
   "Braces & Aligners",
   "Daily Care",
   "Emergencies",
@@ -111,10 +112,127 @@ export const VIDEO_CATEGORIES = [
 
 export const VIDEOS = [
   {
-    id: "vgofWMXfdXQ",
-    title: "Rapid Palatal Expander (Mixed Dentition)",
+    id: "rWMdtlLivHI",
+    title: "RPE (Mixed Dentition)",
     category: "Appliances",
     blurb:
       "How an expander is placed and how it gradually widens the upper jaw to create room for permanent teeth.",
+  },
+  {
+    id: "02iPP1CmUu4",
+    title: "E-Space Maintainer / Holding Arch",
+    category: "Appliances",
+    blurb:
+      "A space-maintaining appliance that holds room open in the arch after a tooth is lost early, so permanent teeth have the space they need to come in.",
+  },
+  {
+    id: "YYSSqT2NwgE",
+    title: "2x4 Appliance (Crowding - Coil)",
+    category: "Appliances",
+    blurb:
+      "An early appliance that creates space for crowded incoming front teeth using brackets on just four teeth.",
+  },
+  {
+    id: "mKkeyglfXnk",
+    title: "Bite Pillow / Occlusal Glass Ionomer / Bite Ramp",
+    category: "Appliances",
+    blurb:
+      "A small appliance placed on the back teeth to open the bite temporarily, making it easier for the front teeth to move without interference.",
+  },
+  {
+    id: "pkz7AT2fpdU",
+    title: "Cervical Headgear",
+    category: "Appliances",
+    blurb:
+      "How this appliance is worn and how it helps guide upper jaw growth in growing patients.",
+  },
+  {
+    id: "NLWvqvqJyKI",
+    title: "Mamelon Reduction",
+    category: "Procedures",
+    blurb:
+      "Smoothing the naturally bumpy edge of newly erupted front teeth for a more even smile line.",
+  },
+  {
+    id: "bK_d-SOZRBI",
+    title: "Supra-crestal Fibrotomy",
+    category: "Procedures",
+    blurb:
+      "A simple procedure that can help reduce relapse in a tooth that was significantly rotated before treatment.",
+  },
+  {
+    id: "3A-EeXbKNuw",
+    title: "First Bicuspid Extraction with Favorable Lip Posture",
+    category: "Procedures",
+    blurb:
+      "Why removing a premolar is sometimes part of a treatment plan, and how it can help achieve a more balanced profile.",
+  },
+  {
+    id: "OP3EsaHhdjk",
+    title: "Interproximal Reduction",
+    category: "Procedures",
+    blurb:
+      "A quick, painless process that creates small amounts of space between teeth to help relieve crowding.",
+  },
+  {
+    id: "3T-bULvR3Sw",
+    title: "Impacted Cuspid (Labial) - Gold Chain Treated",
+    category: "Procedures",
+    blurb:
+      "How a tooth stuck below the gum toward the lip side is gently guided into place with a small chain.",
+  },
+  {
+    id: "71zMvoucNwU",
+    title: "Impacted Cuspid (Palatal) Treated",
+    category: "Procedures",
+    blurb:
+      "How a tooth stuck below the gum toward the roof of the mouth is guided into its proper position.",
+  },
+  {
+    id: "fxRz_bU5G_s",
+    title: "Mandibular Setback, Lips Closed",
+    category: "Procedures",
+    blurb:
+      "An illustration of how moving the lower jaw back can improve a bite and facial balance.",
+  },
+  {
+    id: "NRJnV177iuM",
+    title: "Mandibular Advancement",
+    category: "Procedures",
+    blurb:
+      "An illustration of how bringing the lower jaw forward can correct certain bite relationships.",
+  },
+  {
+    id: "yjEGxWttGt4",
+    title: "Elastics: Class II Overjet Compliance",
+    category: "Daily Care",
+    blurb:
+      "How to wear the rubber bands (elastics) used to correct an overbite, and why wearing them consistently matters.",
+  },
+  {
+    id: "dj1k4zLqWLo",
+    title: "Elastics: Buccal Crossbite",
+    category: "Daily Care",
+    blurb: "How to wear the elastics used to correct a crossbite on the back teeth.",
+  },
+  {
+    id: "tMIUws_x3jo",
+    title: "Elastics: Palatal Crossbite",
+    category: "Daily Care",
+    blurb:
+      "How to wear the elastics used to correct a crossbite involving the roof of the mouth.",
+  },
+  {
+    id: "pOigD9f76CM",
+    title: "Elastics: Asymmetric",
+    category: "Daily Care",
+    blurb: "How to wear elastics set up to correct a bite that's uneven from one side to the other.",
+  },
+  {
+    id: "cQU9WkAEKk4",
+    title: "Elastics: Anterior Open Bite",
+    category: "Daily Care",
+    blurb:
+      "How to wear the elastics used to help close a gap between the upper and lower front teeth.",
   },
 ];

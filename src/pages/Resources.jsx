@@ -2,17 +2,17 @@ import { Link } from "react-router-dom";
 import { PRACTICE } from "../data/siteData.js";
 
 const newPatient = [
-  { k: "01", h: "Your First Visit", p: "What to expect at your initial consultation." },
+  { k: "01", h: "Your First Visit", p: "What to expect at your initial consultation.", to: "/patient-education/consultation-process" },
   { k: "02", h: "New Patient Forms", p: "Complete your intake paperwork ahead of your appointment.", to: "/resources/new-patient-forms" },
-  { k: "03", h: "Insurance & Financing", p: "Flexible payment options and the plans we accept." },
+  { k: "03", h: "Insurance & Financing", p: "Flexible payment options and the plans we accept.", to: "/financial" },
   { k: "04", h: "Adult Orthodontics", p: "It's never too late to invest in your smile.", to: "/resources/adult-orthodontics" },
 ];
 const duringTreatment = [
   { k: "01", h: "Treatment Videos", p: "Short animations showing how appliances work.", to: "/resources/videos" },
-  { k: "02", h: "Braces Care", p: "Keeping your braces and teeth clean and healthy." },
+  { k: "02", h: "Braces Care", p: "Keeping your braces and teeth clean and healthy.", to: "/patient-education/braces-care" },
   { k: "03", h: "Aligner Care", p: "Wear schedule and cleaning tips for clear aligners." },
   { k: "04", h: "Broken Brackets & Emergencies", p: "What to do for a loose bracket or wire.", to: "/resources/emergencies" },
-  { k: "05", h: "Foods to Enjoy & Avoid", p: "Protecting your appliance during treatment." },
+  { k: "05", h: "Foods to Enjoy & Avoid", p: "Protecting your appliance during treatment.", to: "/patient-education/braces-care" },
 ];
 const afterTreatment = [
   { k: "01", h: "Retainers & Retention", p: "Retainer types, wear schedules, care, and fees.", to: "/resources/retainers" },
@@ -79,6 +79,8 @@ export default function Resources() {
           </div>
           <div className="cta-actions">
             <a href={PRACTICE.phoneHref} className="btn btn-ghost">Call {PRACTICE.phone}</a>
+            <a href={PRACTICE.emailHref} className="btn btn-ghost">Email Us</a>
+            <a href={`sms:${PRACTICE.phoneHref.replace("tel:", "")}`} className="btn btn-ghost">Text Us</a>
             <Link to="/appointment" className="btn">Request an Appointment</Link>
           </div>
         </div>

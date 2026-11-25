@@ -27,10 +27,15 @@ export default function Referrals() {
       </section>
 
       {/* FRIEND / FAMILY */}
-      <section className="section ref-section">
+      <section className="section ref-section" id="patient-referral">
         <div className="wrap">
           <div className="section-head" style={{ marginBottom: 26 }}>
-            <h2>Refer a Friend or Family Member</h2>
+            <h2>Patient Referral</h2>
+            <p className="lead" style={{ maxWidth: "62ch" }}>
+              For patients and families: use this form to refer a friend or family member, or
+              to let us know you (or someone in your family) would like to schedule a
+              consultation or appointment.
+            </p>
           </div>
           <form className="form" onSubmit={submit(setSentFriend)}>
             <div className="grid-form">
@@ -69,10 +74,15 @@ export default function Referrals() {
       </section>
 
       {/* DOCTOR */}
-      <section className="section ref-section">
+      <section className="section ref-section" id="doctor-referral">
         <div className="wrap">
           <div className="section-head" style={{ marginBottom: 26 }}>
             <h2>Doctor Referral</h2>
+            <p className="lead" style={{ maxWidth: "62ch" }}>
+              For referring offices: if you have a patient who may benefit from orthodontic
+              treatment, use this form to send us their information and we'll take it from
+              there.
+            </p>
           </div>
           <form className="form" onSubmit={submit(setSentDoctor)}>
             <div className="grid-form">

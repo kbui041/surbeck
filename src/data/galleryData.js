@@ -7,7 +7,9 @@
 
    1. Save the case PDF in  public/gallery/  named after the case's `slug`:
         <slug>.pdf
-      e.g. for slug "a-north"  ->  a-north.pdf
+      e.g. for slug "case-084"  ->  case-084.pdf
+      Also save a square-ish preview image in  public/gallery/thumbs/  as
+        <slug>.jpg   (first page of the PDF, ~541x700, matches the others)
    2. `pdf` defaults to true, since every case currently has one on file.
       Set  pdf: false  on a case if its PDF isn't available yet — it will
       show a labeled "Before/After" placeholder instead, so the gallery
@@ -15,10 +17,13 @@
 
    months: treatment length in months. Use null if not recorded.
 
-   No patient name/initials are stored here by design — the practice asked
-   for zero identifying info on the public site, so cases are referenced only
-   by category, treatment length, and an internal slug (not shown to users).
-   ========================================================================= */
+   No patient name/initials are stored here, and — as of Nov 2026 — the
+   `slug` is no longer derived from a patient's name either (it used to be,
+   e.g. "adol-aida-j"). Slugs are now plain sequential IDs ("case-001",
+   "case-002", ...) with zero identifying info anywhere in the filename, per
+   the practice's request. When adding a new case, use the next unused
+   number — do NOT name the slug (or the PDF/thumbnail files) after the
+   patient in any way. */
 
 export const GROUPS = ["Adolescent", "Adult"];
 
@@ -112,105 +117,106 @@ const c = (group, category, months, slug, pdf = true) => ({
 
 export const CASES = [
   /* ---------------------------- ADOLESCENT ---------------------------- */
-  c("Adolescent", "Class I Crowding", 9, "adol-a-north"),
-  c("Adolescent", "Class I Crowding", 12, "adol-aida-j"),
-  c("Adolescent", "Class I Crowding", 12, "adol-c-lee"),
-  c("Adolescent", "Class I Crowding", 11, "adol-diya-n"),
-  c("Adolescent", "Class I Crowding", 14, "adol-e-hemphill"),
-  c("Adolescent", "Class I Crowding", 12, "adol-elsie-e"),
-  c("Adolescent", "Class I Crowding", 10, "adol-e-johnston"),
-  c("Adolescent", "Class I Crowding", 11, "adol-harlow-s"),
-  c("Adolescent", "Class I Crowding", 14, "adol-hayden-h"),
-  c("Adolescent", "Class I Crowding", 12, "adol-jonah-m"),
-  c("Adolescent", "Class I Crowding", 13, "adol-kaden-l"),
-  c("Adolescent", "Class I Crowding", 12, "adol-kasen-s"),
-  c("Adolescent", "Class I Crowding", 9, "adol-r-nikhil"),
+  c("Adolescent", "Class I Crowding", 9, "case-001"),
+  c("Adolescent", "Class I Crowding", 12, "case-002"),
+  c("Adolescent", "Class I Crowding", 12, "case-003"),
+  c("Adolescent", "Class I Crowding", 11, "case-004"),
+  c("Adolescent", "Class I Crowding", 14, "case-005"),
+  c("Adolescent", "Class I Crowding", 12, "case-006"),
+  c("Adolescent", "Class I Crowding", 10, "case-007"),
+  c("Adolescent", "Class I Crowding", 11, "case-008"),
+  c("Adolescent", "Class I Crowding", 14, "case-009"),
+  c("Adolescent", "Class I Crowding", 12, "case-010"),
+  c("Adolescent", "Class I Crowding", 13, "case-011"),
+  c("Adolescent", "Class I Crowding", 12, "case-012"),
+  c("Adolescent", "Class I Crowding", 9, "case-013"),
+  c("Adolescent", "Class I Crowding", 11, "case-083"),
 
-  c("Adolescent", "Spacing", 11, "adol-d-pegushin"),
-  c("Adolescent", "Spacing", 13, "adol-gabriella-n"),
+  c("Adolescent", "Spacing", 11, "case-014"),
+  c("Adolescent", "Spacing", 13, "case-015"),
 
-  c("Adolescent", "Edge-to-edge", 10, "adol-c-shokri"),
-  c("Adolescent", "Edge-to-edge", 10, "adol-linus-l"),
-  c("Adolescent", "Edge-to-edge", 12, "adol-sophia-m"),
+  c("Adolescent", "Edge-to-edge", 10, "case-016"),
+  c("Adolescent", "Edge-to-edge", 10, "case-017"),
+  c("Adolescent", "Edge-to-edge", 12, "case-018"),
 
-  c("Adolescent", "Implant Placement", 11, "adol-f-ballas-implant"),
+  c("Adolescent", "Implant Placement", 11, "case-019"),
 
-  c("Adolescent", "Missing Tooth", 23, "adol-a-scribner"),
-  c("Adolescent", "Missing Tooth", 18, "adol-c-wilson"),
-  c("Adolescent", "Missing Tooth", 11, "adol-f-ballas-missing"),
+  c("Adolescent", "Missing Tooth", 23, "case-020"),
+  c("Adolescent", "Missing Tooth", 18, "case-021"),
+  c("Adolescent", "Missing Tooth", 11, "case-022"),
 
-  c("Adolescent", "Class II Headgear", 16, "adol-kai-h"),
-  c("Adolescent", "Class II Headgear", 19, "adol-p-trescases"),
-  c("Adolescent", "Class II Headgear", 25, "adol-s-linkon"),
+  c("Adolescent", "Class II Headgear", 16, "case-023"),
+  c("Adolescent", "Class II Headgear", 19, "case-024"),
+  c("Adolescent", "Class II Headgear", 25, "case-025"),
 
-  c("Adolescent", "Class I-II Crowding", 11, "adol-e-cunliffe"),
-  c("Adolescent", "Class I-II Crowding", 11, "adol-k-lynch"),
-  c("Adolescent", "Class I-II Crowding", 15, "adol-l-smith"),
-  c("Adolescent", "Class I-II Crowding", 13, "adol-r-downing"),
-  c("Adolescent", "Class I-II Crowding", 12, "adol-z-brown"),
+  c("Adolescent", "Class I-II Crowding", 11, "case-026"),
+  c("Adolescent", "Class I-II Crowding", 11, "case-027"),
+  c("Adolescent", "Class I-II Crowding", 15, "case-028"),
+  c("Adolescent", "Class I-II Crowding", 13, "case-029"),
+  c("Adolescent", "Class I-II Crowding", 12, "case-030"),
 
-  c("Adolescent", "Impacted Teeth", 13, "adol-a-price"),
-  c("Adolescent", "Impacted Teeth", 13, "adol-f-gerron"),
-  c("Adolescent", "Impacted Teeth", 14, "adol-s-ortego"),
-  c("Adolescent", "Impacted Teeth", 16, "adol-t-guyette"),
+  c("Adolescent", "Impacted Teeth", 13, "case-031"),
+  c("Adolescent", "Impacted Teeth", 13, "case-032"),
+  c("Adolescent", "Impacted Teeth", 14, "case-033"),
+  c("Adolescent", "Impacted Teeth", 16, "case-034"),
 
-  c("Adolescent", "Mesially Impacted Molars", 16, "adol-keira-l"),
-  c("Adolescent", "Mesially Impacted Molars", 16, "adol-l-noerenberg"),
+  c("Adolescent", "Mesially Impacted Molars", 16, "case-035"),
+  c("Adolescent", "Mesially Impacted Molars", 16, "case-036"),
 
   /* ------------------------------- ADULT ------------------------------ */
-  c("Adult", "Edge-to-edge", 8, "adult-b-oquin-edge"),
-  c("Adult", "Edge-to-edge", 9, "adult-d-morrow"),
-  c("Adult", "Edge-to-edge", 12, "adult-j-lundin"),
-  c("Adult", "Edge-to-edge", 11, "adult-r-moctezuma"),
+  c("Adult", "Edge-to-edge", 8, "case-037"),
+  c("Adult", "Edge-to-edge", 9, "case-038"),
+  c("Adult", "Edge-to-edge", 12, "case-039"),
+  c("Adult", "Edge-to-edge", 11, "case-040"),
 
-  c("Adult", "Implant Placement", 14, "adult-c-stair"),
-  c("Adult", "Implant Placement", 12, "adult-e-torres"),
-  c("Adult", "Implant Placement", 5, "adult-g-farringer"),
-  c("Adult", "Implant Placement", 14, "adult-isabel-v"),
-  c("Adult", "Implant Placement", 14, "adult-j-bever"),
-  c("Adult", "Implant Placement", 17, "adult-k-price"),
-  c("Adult", "Implant Placement", 17, "adult-l-igoe"),
-  c("Adult", "Implant Placement", 13, "adult-m-miguel"),
-  c("Adult", "Implant Placement", 13, "adult-p-lawlor"),
-  c("Adult", "Implant Placement", 4, "adult-yifan-w"),
+  c("Adult", "Implant Placement", 14, "case-041"),
+  c("Adult", "Implant Placement", 12, "case-042"),
+  c("Adult", "Implant Placement", 5, "case-043"),
+  c("Adult", "Implant Placement", 14, "case-044"),
+  c("Adult", "Implant Placement", 14, "case-045"),
+  c("Adult", "Implant Placement", 17, "case-046"),
+  c("Adult", "Implant Placement", 17, "case-047"),
+  c("Adult", "Implant Placement", 13, "case-048"),
+  c("Adult", "Implant Placement", 13, "case-049"),
+  c("Adult", "Implant Placement", 4, "case-050"),
 
-  c("Adult", "Pre-restorative Wear", 11, "adult-a-epperson"),
-  c("Adult", "Pre-restorative Wear", 8, "adult-b-oquin-wear"),
-  c("Adult", "Pre-restorative Wear", 13, "adult-d-epp"),
-  c("Adult", "Pre-restorative Wear", 15, "adult-m-martinez"),
-  c("Adult", "Pre-restorative Wear", 12, "adult-p-ramanathan"),
-  c("Adult", "Pre-restorative Wear", 9, "adult-s-farrar"),
+  c("Adult", "Pre-restorative Wear", 11, "case-051"),
+  c("Adult", "Pre-restorative Wear", 8, "case-052"),
+  c("Adult", "Pre-restorative Wear", 13, "case-053"),
+  c("Adult", "Pre-restorative Wear", 15, "case-054"),
+  c("Adult", "Pre-restorative Wear", 12, "case-055"),
+  c("Adult", "Pre-restorative Wear", 9, "case-056"),
 
-  c("Adult", "Spacing", 11, "adult-eugene-l"),
-  c("Adult", "Spacing", 14, "adult-phoung-l-spacing"),
+  c("Adult", "Spacing", 11, "case-057"),
+  c("Adult", "Spacing", 14, "case-058"),
 
-  c("Adult", "Class I Crowding", 10, "adult-a-chisman"),
-  c("Adult", "Class I Crowding", 10, "adult-blair-b"),
-  c("Adult", "Class I Crowding", 10, "adult-hannah-k"),
-  c("Adult", "Class I Crowding", 7, "adult-j-davis"),
-  c("Adult", "Class I Crowding", 6, "adult-k-chua"),
-  c("Adult", "Class I Crowding", 8, "adult-k-lewis"),
-  c("Adult", "Class I Crowding", 15, "adult-n-gayatri"),
-  c("Adult", "Class I Crowding", null, "adult-noam-m"),
-  c("Adult", "Class I Crowding", 12, "adult-r-moutentan"),
-  c("Adult", "Class I Crowding", 9, "adult-s-beswick"),
-  c("Adult", "Class I Crowding", 5, "adult-s-patton"),
-  c("Adult", "Class I Crowding", 7, "adult-s-schuler"),
-  c("Adult", "Class I Crowding", 5, "adult-t-ohara"),
-  c("Adult", "Class I Crowding", 9, "adult-t-ortega"),
+  c("Adult", "Class I Crowding", 10, "case-059"),
+  c("Adult", "Class I Crowding", 10, "case-060"),
+  c("Adult", "Class I Crowding", 10, "case-061"),
+  c("Adult", "Class I Crowding", 7, "case-062"),
+  c("Adult", "Class I Crowding", 6, "case-063"),
+  c("Adult", "Class I Crowding", 8, "case-064"),
+  c("Adult", "Class I Crowding", 15, "case-065"),
+  c("Adult", "Class I Crowding", null, "case-066"),
+  c("Adult", "Class I Crowding", 12, "case-067"),
+  c("Adult", "Class I Crowding", 9, "case-068"),
+  c("Adult", "Class I Crowding", 5, "case-069"),
+  c("Adult", "Class I Crowding", 7, "case-070"),
+  c("Adult", "Class I Crowding", 5, "case-071"),
+  c("Adult", "Class I Crowding", 9, "case-072"),
 
-  c("Adult", "Missing Mandibular Incisor", 13, "adult-edith-cl"),
+  c("Adult", "Missing Mandibular Incisor", 13, "case-073"),
 
-  c("Adult", "Open Bite", 15, "adult-d-gottleib"),
-  c("Adult", "Open Bite", 15, "adult-misa-n"),
+  c("Adult", "Open Bite", 15, "case-074"),
+  c("Adult", "Open Bite", 15, "case-075"),
 
-  c("Adult", "Perio Involvement", 14, "adult-phoung-l-perio"),
+  c("Adult", "Perio Involvement", 14, "case-076"),
 
-  c("Adult", "Class II Surgery", 23, "adult-g-holmes"),
-  c("Adult", "Class II Surgery", 24, "adult-j-rodriguez"),
+  c("Adult", "Class II Surgery", 23, "case-077"),
+  c("Adult", "Class II Surgery", 24, "case-078"),
 
-  c("Adult", "Class III Surgery", 17, "adult-a-grant"),
-  c("Adult", "Class III Surgery", 15, "adult-c-head"),
-  c("Adult", "Class III Surgery", 17, "adult-e-prewitt"),
-  c("Adult", "Class III Surgery", 23, "adult-r-lee"),
+  c("Adult", "Class III Surgery", 17, "case-079"),
+  c("Adult", "Class III Surgery", 15, "case-080"),
+  c("Adult", "Class III Surgery", 17, "case-081"),
+  c("Adult", "Class III Surgery", 23, "case-082"),
 ];
