@@ -643,7 +643,7 @@ textarea { min-height: 120px; resize: vertical; }
   .nav > a, .nav-item > a { width: 100%; padding: 15px 0; border-bottom: 1px solid var(--line); }
   .nav a::after { display: none; }
   .nav .nav-cta { margin-top: 18px; }
-  .nav-item.has-sub { width: 100%; }
+  .nav-item.has-sub { width: 100%; display: block; }
   .submenu { position: static; opacity: 1; visibility: visible; transform: none; box-shadow: none; border: 0; padding: 0 0 0 14px; min-width: 0; }
   .submenu a { padding: 12px 0; border-bottom: 1px solid var(--line); white-space: normal; }
   .nav-toggle { display: block; z-index: 70; }
